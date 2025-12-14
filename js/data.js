@@ -92,7 +92,7 @@ const features = [
     {
         title: "Community",
         desc: "Meet travelers worldwide.",
-        iconPath: " 20h5v-2a3M17 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
+        iconPath: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
         colorClass: "red"
     }
 ];
@@ -111,13 +111,6 @@ const events = [
         time: "Dec 24 - Dec 25",
         timeBadge: "All Day",
         desc: "Traditional Azeri-style Christmas dinner. Everyone brings a dish or drink to share.",
-        link: "https://instagram.com"
-    },
-    {
-        title: "New Year Party",
-        time: "Dec 29 - Dec 30",
-        timeBadge: "All Day",
-        desc: "Azeri-style New Year party. Everyone brings a dish or drink to share.",
         link: "https://instagram.com"
     }
 ];
@@ -156,5 +149,29 @@ const offers = [
         buttonColor: "bg-green-600",
         buttonHover: "hover:bg-green-700",
         link: "https://booking.com"
+    }
+];
+
+// FAQ Data
+const faqs = [
+    {
+        question: "Check-in and Check-out times?",
+        answer: "Check-in is from 14:00 PM onwards. Check-out is until 11:00 AM. We offer luggage storage if you arrive early or leave late."
+    },
+    {
+        question: "Is breakfast included?",
+        answer: "Breakfast is available for a small extra fee of $5. It includes local breads, cheeses, eggs, jams, and unlimited tea/coffee."
+    },
+    {
+        question: "Do you have lockers?",
+        answer: "Yes, all dorm beds come with a personal locker. Bring your own padlock or purchase one at reception for $2."
+    },
+    {
+        question: "Is Wi-Fi free?",
+        answer: "Absolutely! We provide fast, free Wi-Fi throughout the entire hostel, including all rooms and common areas."
+    },
+    {
+        question: "Do accept card payments?",
+        answer: "Yes, we accept card payments for all bookings."
     }
 ];

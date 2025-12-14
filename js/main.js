@@ -211,6 +211,28 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
+    // Render FAQs
+    const faqContainer = document.getElementById('faq-container');
+    if (faqContainer && typeof faqs !== 'undefined') {
+        faqContainer.innerHTML = faqs.map((faq, index) => `
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <button
+                    class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                    <span class="font-bold text-lg text-gray-800">${faq.question}</span>
+                    <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-300"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-answer max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+                    <div class="px-6 pb-6 text-gray-600">
+                        ${faq.answer}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
 
     // Experience Modal Functionality
     const expModal = document.getElementById('experience-modal');
