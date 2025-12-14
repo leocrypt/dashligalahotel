@@ -2,6 +2,15 @@
 // You can edit the content of the website here.
 // Images can be local paths (e.g. "images/room1.jpg") or external URLs.
 
+// Site Color Palette
+// Change these colors to customize the entire site's look
+const siteColors = {
+    primary: '#D4AF37',      // Gold - used for CTAs, accents, highlights
+    primaryHover: '#b89127ff', // Darker gold for hover states
+    secondary: '#1a1a1a',    // Dark - used for text, headers, footer
+    background: '#f9fafb'    // Light gray - page background
+};
+
 const experiences = [
     {
         title: "Ganja City Walking Tour",
@@ -83,7 +92,7 @@ const features = [
     {
         title: "Community",
         desc: "Meet travelers worldwide.",
-        iconPath: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
+        iconPath: " 20h5v-2a3M17 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
         colorClass: "red"
     }
 ];
@@ -103,5 +112,49 @@ const events = [
         timeBadge: "All Day",
         desc: "Traditional Azeri-style Christmas dinner. Everyone brings a dish or drink to share.",
         link: "https://instagram.com"
+    },
+    {
+        title: "New Year Party",
+        time: "Dec 29 - Dec 30",
+        timeBadge: "All Day",
+        desc: "Azeri-style New Year party. Everyone brings a dish or drink to share.",
+        link: "https://instagram.com"
+    }
+];
+
+// Offers Data
+const offers = [
+    {
+        title: "Early Bird Special",
+        discount: "20% OFF",
+        description: "Book 7+ days in advance and save big on your stay. Valid for all room types.",
+        bgColor: "bg-blue-50",
+        borderColor: "border-blue-100",
+        textColor: "text-blue-600",
+        buttonColor: "bg-blue-600",
+        buttonHover: "hover:bg-blue-700",
+        link: "https://booking.com"
+    },
+    {
+        title: "Stay Longer, Save More",
+        discount: "25% OFF",
+        description: "Book a week (7+ nights) and enjoy exclusive savings. Perfect for digital nomads.",
+        bgColor: "bg-purple-50",
+        borderColor: "border-purple-100",
+        textColor: "text-purple-600",
+        buttonColor: "bg-purple-600",
+        buttonHover: "hover:bg-purple-700",
+        link: "https://booking.com"
+    },
+    {
+        title: "Student Saver",
+        discount: "15% OFF anytime",
+        description: "Show your valid student ID upon check-in and get a discount on your entire stay.",
+        bgColor: "bg-green-50",
+        borderColor: "border-green-100",
+        textColor: "text-green-600",
+        buttonColor: "bg-green-600",
+        buttonHover: "hover:bg-green-700",
+        link: "https://booking.com"
     }
 ];

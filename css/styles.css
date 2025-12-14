@@ -1,19 +1,48 @@
-/* Custom styles and animations */
+/* Dynamic color styles using CSS custom properties */
 
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translate3d(0, 40px, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-    }
+/* Primary color overrides */
+.bg-brand-gold {
+    background-color: var(--color-primary) !important;
 }
 
-.animate-fade-in-up {
-    animation: fadeInUp 0.8s ease-out forwards;
+.text-brand-gold {
+    color: var(--color-primary) !important;
+}
+
+.border-brand-gold {
+    border-color: var(--color-primary) !important;
+}
+
+/* Hover states */
+.hover\:bg-yellow-600:hover,
+.hover\:bg-brand-gold-hover:hover {
+    background-color: var(--color-primary-hover) !important;
+}
+
+.hover\:text-brand-gold:hover {
+    color: var(--color-primary) !important;
+}
+
+.hover\:text-yellow-600:hover {
+    color: var(--color-primary-hover) !important;
+}
+
+/* Background color */
+.bg-gray-50 {
+    background-color: var(--color-background) !important;
+}
+
+/* Line clamp utility - if needed */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
