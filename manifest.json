@@ -1,0 +1,21 @@
+{
+  "name": "Qala Hostel Ganja",
+  "short_name": "QalaHostel",
+  "description": "Book your stay at Qala Hostel in Ganja.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "https://via.placeholder.com/192x192.png?text=Icon",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://via.placeholder.com/512x512.png?text=Icon",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

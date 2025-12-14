@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qala Hostel Ganja - Experience Azerbaijan</title>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1a1a1a">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37', // Example gold accent
+                            dark: '#1a1a1a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+    <!-- Header / Nav (Absolute overlay) -->
+    <header
+        class="absolute top-0 left-0 w-full z-50 py-6 px-6 md:px-12 flex justify-between items-center transition-all duration-300"
+        id="main-header">
+        <a href="#" class="text-2xl font-bold text-white tracking-wider uppercase">Qala Hostel</a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-8">
+            <a href="#rooms" class="text-gray-200 hover:text-white transition-colors">Rooms</a>
+            <a href="#features" class="text-gray-200 hover:text-white transition-colors">Services</a>
+            <a href="#experiences" class="text-gray-200 hover:text-white transition-colors">Experiences</a>
+            <a href="#gallery" class="text-gray-200 hover:text-white transition-colors">Gallery</a>
+            <a href="#location" class="text-gray-200 hover:text-white transition-colors">Location</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <a href="https://booking.com" target="_blank"
+            class="hidden md:inline-block bg-brand-gold hover:bg-yellow-600 text-white font-semibold py-2 px-6 rounded-full transition-all transform hover:scale-105 shadow-lg">
+            Book Now
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-white focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-brand-dark bg-opacity-95 z-40 transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-8">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-white text-4xl">&times;</button>
+        <a href="#rooms" class="text-2xl text-white mobile-link">Rooms</a>
+        <a href="#features" class="text-2xl text-white mobile-link">Services</a>
+        <a href="#experiences" class="text-2xl text-white mobile-link">Experiences</a>
+        <a href="#gallery" class="text-2xl text-white mobile-link">Gallery</a>
+        <a href="#location" class="text-2xl text-white mobile-link">Location</a>
+        <a href="https://booking.com" class="text-2xl text-brand-gold font-bold mobile-link">Book Now</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+            <!-- Using a placeholder video link, user to replace -->
+            <source
+                src="https://assets.mixkit.co/videos/preview/mixkit-backpacking-hiker-walking-down-a-trail-4447-large.mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
+
+        <!-- Content -->
+        <div class="relative z-20 text-center text-white px-4">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">Experience Ganja</h1>
+            <p
+                class="text-xl md:text-2xl mb-10 font-light tracking-wide max-w-2xl mx-auto animate-fade-in-up delay-100">
+                The perfect blend of history, comfort, and culture at Qala Hostel.
+            </p>
+            <div class="animate-fade-in-up delay-200">
+                <a href="#rooms"
+                    class="bg-white text-gray-900 hover:bg-gray-100 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-2xl inline-flex items-center">
+                    <span>Explore Rooms</span>
+                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Placeholder -->
+    <main>
+
+        <!-- Rooms Section -->
+        <section id="rooms" class="py-20 px-6 md:px-12 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Rooms</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comfortable, clean, and designed for travelers.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Room Card 1 -->
+                    <div
+                        class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Mixed Dorm"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            <div
+                                class="absolute top-4 right-4 bg-brand-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                                Most Popular</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-2">Mixed Dorm (8 Bed)</h3>
+                            <p class="text-gray-600 mb-6 line-clamp-2">Spacious dormitory with privacy curtains,
+                                personal lockers, and reading lights.</p>
+
+                            <ul class="mb-8 space-y-2 text-gray-500 text-sm">
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-brand-gold" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg> Free Wi-Fi</li>
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-brand-gold" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg> Air Conditioning</li>
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-brand-gold" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg> Personal Locker</li>
+                            </ul>
+
+                            <div class="flex justify-between items-center pt-6 border-t border-gray-200">
+                                <div>
+                                    <span class="text-xs text-gray-400 block">Starting from</span>
+                                    <span class="text-2xl font-bold text-brand-gold">$15<span
+                                            class="text-sm text-gray-400 font-normal">/night</span></span>
+                                </div>
+                                <a href="https://booking.com" target="_blank"
+                                    class="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Room Card 2 -->
+                    <div
+                        class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Female Dorm"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-2">Female Dorm (6 Bed)</h3>
+                            <p class="text-gray-600 mb-6 line-clamp-2">Secure and cozy dormitory exclusively for female
+                                travelers.</p>
+
+                            <ul class="mb-8 space-y-2 text-gray-500 text-sm">
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-brand-gold" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg> Ensuite Bathroom</li>
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-brand-gold" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg> Hairdryer</li>
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-brand-gold" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg> Vanity Mirror</li>
+                            </ul>
+
+                            <div class="flex justify-between items-center pt-6 border-t border-gray-200">
+                                <div>
+                                    <span class="text-xs text-gray-400 block">Starting from</span>
+                                    <span class="text-2xl font-bold text-brand-gold">$18<span
+                                            class="text-sm text-gray-400 font-normal">/night</span></span>
+                                </div>
+                                <a href="https://booking.com" target="_blank"
+                                    class="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Room Card 3 -->
+                    <div
+                        class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                                alt="Private Room"
+                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-2">Private Double Room</h3>
+                            <p class="text-gray-600 mb-6 line-clamp-2">Perfect for couples or friends seeking extra
+                                privacy and comfort.</p>
+
+                            <ul class="mb-8 space-y-2 text-gray-500 text-sm">
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-brand-gold" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg> Queen Size Bed</li>
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-brand-gold" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg> Smart TV</li>
+                                <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-brand-gold" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg> Towels Included</li>
+                            </ul>
+
+                            <div class="flex justify-between items-center pt-6 border-t border-gray-200">
+                                <div>
+                                    <span class="text-xs text-gray-400 block">Starting from</span>
+                                    <span class="text-2xl font-bold text-brand-gold">$45<span
+                                            class="text-sm text-gray-400 font-normal">/night</span></span>
+                                </div>
+                                <a href="https://booking.com" target="_blank"
+                                    class="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors">Book
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section (Services) -->
+        <section id="features" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Hostel Features</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Everything you need for a comfortable stay.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                    <!-- Feature 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center group">
+                        <div
+                            class="w-16 h-16 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071a15.5 15.5 0 0114.14 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Free Fast Wi-Fi</h4>
+                        <p class="text-gray-500 text-sm">Stay connected everywhere.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center group">
+                        <div
+                            class="w-16 h-16 bg-yellow-50 text-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Paid Breakfast</h4>
+                        <p class="text-gray-500 text-sm">Delicious local start.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center group">
+                        <div
+                            class="w-16 h-16 bg-green-50 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Free Parking</h4>
+                        <p class="text-gray-500 text-sm">Secure spot for your car.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow text-center group">
+                        <div
+                            class="w-16 h-16 bg-red-50 text-red-500 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg mb-2">Community</h4>
+                        <p class="text-gray-500 text-sm">Meet travelers worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiences Section -->
+        <section id="experiences" class="py-20 px-6 md:px-12 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                    <div class="max-w-xl">
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Ganja Experiences</h2>
+                        <p class="text-xl text-gray-600">Discover the hidden gems of Azerbaijan's second largest city.
+                        </p>
+                    </div>
+                    <a href="#"
+                        class="hidden md:inline-block text-brand-gold font-bold hover:underline mt-4 md:mt-0">View all
+                        activities &rarr;</a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-[300px]">
+                    <!-- Experience 1 (Large) -->
+                    <div
+                        class="md:col-span-2 lg:col-span-2 relative rounded-2xl overflow-hidden group cursor-pointer shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1544976735-d72b27464161?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+                            alt="Old City Tour"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 text-white">
+                            <span
+                                class="bg-white text-black text-xs font-bold px-3 py-1 rounded-full uppercase mb-4 inline-block">Free</span>
+                            <h3 class="text-3xl font-bold mb-2">Ganja City Walking Tour</h3>
+                            <p class="text-gray-200 line-clamp-2">Explore the historic streets, the Bottle House, and
+                                the Khan's Garden with our local guide.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="relative rounded-2xl overflow-hidden group cursor-pointer shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Wine Tasting"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-2xl font-bold mb-1">Wine Tasting</h3>
+                            <p class="text-gray-300 text-sm">Local vineyards tour.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="relative rounded-2xl overflow-hidden group cursor-pointer shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Hajikand Forest"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-2xl font-bold mb-1">Hajikand Forest Hike</h3>
+                            <p class="text-gray-300 text-sm">Nature escape just 30 mins away.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experience 4 -->
+                    <div class="relative rounded-2xl overflow-hidden group cursor-pointer shadow-lg lg:col-span-1">
+                        <img src="https://images.unsplash.com/photo-1582234372722-c0d6d63322d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Cooking Class"
+                            class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-6 text-white">
+                            <h3 class="text-2xl font-bold mb-1">Azeri Cooking Class</h3>
+                            <p class="text-gray-300 text-sm">Learn to make Dolma.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center md:hidden">
+                    <a href="#" class="inline-block text-brand-gold font-bold hover:underline">View all activities
+                        &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar of Events Section -->
+        <section id="calendar" class="py-20 bg-gray-900 text-white">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">Upcoming Events</h2>
+                    <p class="text-xl text-gray-400 max-w-2xl mx-auto">Join the fun and meet new friends.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event 1 -->
+                    <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-700 transition-colors border border-gray-700">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-brand-gold font-bold text-sm uppercase tracking-wider">Every
+                                Thursday</span>
+                            <span class="bg-gray-900 text-xs px-2 py-1 rounded text-gray-300">20:00</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Pub Crawl Night</h3>
+                        <p class="text-gray-400 mb-6 line-clamp-3">Join us for a legendary night out exploring the best
+                            bars in Ganja. Free shots included!</p>
+                        <a href="https://instagram.com" target="_blank"
+                            class="inline-flex items-center text-brand-gold hover:text-white transition-colors">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                            View on Instagram
+                        </a>
+                    </div>
+
+                    <!-- Event 2 -->
+                    <div class="bg-gray-800 rounded-xl p-8 hover:bg-gray-700 transition-colors border border-gray-700">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-brand-gold font-bold text-sm uppercase tracking-wider">Dec 24 - Dec
+                                25</span>
+                            <span class="bg-gray-900 text-xs px-2 py-1 rounded text-gray-300">All Day</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Christmas Dinner</h3>
+                        <p class="text-gray-400 mb-6 line-clamp-3">Traditional Azeri-style Christmas dinner. Everyone
+                            brings a dish or drink to share.</p>
+                        <a href="https://instagram.com" target="_blank"
+                            class="inline-flex items-center text-brand-gold hover:text-white transition-colors">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                            View on Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 md:px-12">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Gallery</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">A glimpse into the Qala life.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Gallery Item 1 -->
+                    <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
+                        onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Cozy Common Area" data-caption="Our cozy common area where travelers meet."
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
+                            <h4
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Common Area</h4>
+                            <p
+                                class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                Where stories are shared.</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 2 -->
+                    <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
+                        onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1596276020587-8044fe049813?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Rooftop View" data-caption="Enjoy the sunset from our rooftop terrace."
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
+                            <h4
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Rooftop</h4>
+                            <p
+                                class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                Sunset vibes.</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 3 -->
+                    <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
+                        onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Private Room Detail" data-caption="Clean and minimalistic private rooms."
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
+                            <h4
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Details</h4>
+                            <p
+                                class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                Comfort first.</p>
+                        </div>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
+                        onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1582234372722-c0d6d63322d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Kitchen" data-caption="Fully equipped kitchen for your culinary experiments."
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
+                            <h4
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Kitchen</h4>
+                            <p
+                                class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                Cook like a local.</p>
+                        </div>
+                    </div>
+                    <!-- More placeholders for grid effect -->
+                    <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
+                        onclick="openLightbox(this)">
+                        <img src="https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Dorm Life" data-caption="Making friends in the dorms."
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
+                            <h4
+                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                                Dorm Life</h4>
+                            <p
+                                class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                                Social atmosphere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="relative bg-gray-100 h-[600px] w-full">
+            <!-- Google Maps Embed -->
+            <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all duration-500"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.2618957863!2d46.360!3d40.687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQxJzEzLjIiTiA0NsKwMjEnMzYuMCJF!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy"></iframe>
+
+            <div class="absolute bottom-10 left-6 md:left-12 bg-white p-8 rounded-xl shadow-2xl max-w-sm z-10">
+                <h3 class="text-2xl font-bold mb-4">Find Us</h3>
+                <p class="text-gray-600 mb-6">Located in the heart of Ganja, just 5 minutes walk from the main square.
+                </p>
+                <div class="flex flex-col space-y-3">
+                    <a href="https://maps.google.com" target="_blank"
+                        class="w-full bg-brand-gold text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-yellow-600 transition-colors shadow-lg">Get
+                        Directions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers Section -->
+        <section id="offers" class="py-20 px-6 md:px-12 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Special Offers</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Save money on your adventures.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Offer 1: Holiday -->
+                    <div class="bg-red-50 rounded-2xl p-8 border border-red-100 relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
+                            Limited Time</div>
+                        <h3 class="text-2xl font-bold text-red-600 mb-2">Holiday Special</h3>
+                        <p class="text-gray-700 font-bold text-lg mb-4">20% OFF all dorms</p>
+                        <p class="text-gray-500 mb-6 text-sm">Valid during Christmas and New Year week (Dec 24 - Jan 2).
+                            Celebrate with us!</p>
+                        <a href="https://booking.com" target="_blank"
+                            class="block w-full text-center bg-red-600 text-white font-bold py-3 rounded-lg hover:bg-red-700 transition-colors">Claim
+                            Offer</a>
+                    </div>
+
+                    <!-- Offer 2: Group -->
+                    <div class="bg-blue-50 rounded-2xl p-8 border border-blue-100 relative overflow-hidden group">
+                        <h3 class="text-2xl font-bold text-blue-600 mb-2">Group Discount</h3>
+                        <p class="text-gray-700 font-bold text-lg mb-4">Stay 4, Pay for 3</p>
+                        <p class="text-gray-500 mb-6 text-sm">Traveling with a squad? Book 4 beds in any dorm and get
+                            one stay for free.</p>
+                        <a href="https://booking.com" target="_blank"
+                            class="block w-full text-center bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition-colors">Book
+                            for Group</a>
+                    </div>
+
+                    <!-- Offer 3: Student -->
+                    <div class="bg-green-50 rounded-2xl p-8 border border-green-100 relative overflow-hidden group">
+                        <h3 class="text-2xl font-bold text-green-600 mb-2">Student Saver</h3>
+                        <p class="text-gray-700 font-bold text-lg mb-4">15% OFF anytime</p>
+                        <p class="text-gray-500 mb-6 text-sm">Show your valid student ID upon check-in and get a
+                            discount on your entire stay.</p>
+                        <a href="https://booking.com" target="_blank"
+                            class="block w-full text-center bg-green-600 text-white font-bold py-3 rounded-lg hover:bg-green-700 transition-colors">Student
+                            Rate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-gray-50">
+            <div class="max-w-3xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                        <button
+                            class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-bold text-lg text-gray-800">Check-in and Check-out times?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+                            <div class="px-6 pb-6 text-gray-600">
+                                Check-in is from 14:00 PM onwards. Check-out is until 11:00 AM. We offer luggage storage
+                                if you arrive early or leave late.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                        <button
+                            class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-bold text-lg text-gray-800">Is breakfast included?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+                            <div class="px-6 pb-6 text-gray-600">
+                                Breakfast is available for a small extra fee of $5. It includes local breads, cheeses,
+                                eggs, jams, and unlimited tea/coffee.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                        <button
+                            class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none">
+                            <span class="font-bold text-lg text-gray-800">Do you have lockers?</span>
+                            <svg class="faq-icon w-5 h-5 text-gray-500 transform transition-transform duration-300"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="max-h-0 opacity-0 transition-all duration-300 ease-in-out">
+                            <div class="px-6 pb-6 text-gray-600">
+                                Yes, every dorm bed comes with a large personal locker. You'll need your own padlock, or
+                                you can rent one from reception.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox"
+        class="fixed inset-0 z-[60] bg-black bg-opacity-95 hidden items-center justify-center opacity-0 transition-opacity duration-300">
+        <button id="lightbox-close"
+            class="absolute top-6 right-6 text-white text-5xl hover:text-gray-300 focus:outline-none">&times;</button>
+        <div class="relative max-w-5xl max-h-screen p-4 flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full object-contain rounded-md shadow-2xl">
+            <div class="mt-4 text-center">
+                <h3 id="lightbox-title" class="text-2xl text-white font-bold"></h3>
+                <p id="lightbox-caption" class="text-gray-400 mt-2"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-2xl font-bold mb-4">Qala Hostel Ganja</h3>
+                <p class="text-gray-400 max-w-sm">Your home away from home in the heart of Azerbaijan. Experience the
+                    culture, meet the people, live the history.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#rooms" class="hover:text-white transition-colors">Rooms</a></li>
+                    <li><a href="#experiences" class="hover:text-white transition-colors">Experiences</a></li>
+                    <li><a href="#offers" class="hover:text-white transition-colors">Offers</a></li>
+                    <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-4">Connect</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-brand-gold transition-colors"><svg class="w-6 h-6"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                        </svg></a>
+                    <a href="#" class="text-gray-400 hover:text-brand-gold transition-colors"><svg class="w-6 h-6"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm">
+            &copy; 2025 Qala Hostel Ganja. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
