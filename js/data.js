@@ -112,6 +112,13 @@ const events = [
         timeBadge: "All Day",
         desc: "Traditional Azeri-style Christmas dinner. Everyone brings a dish or drink to share.",
         link: "https://instagram.com"
+    },
+    {
+        title: "New Year Party",
+        time: "Dec 29 - Dec 30",
+        timeBadge: "All Day",
+        desc: "Azeri-style New Year party. Everyone brings a dish or drink to share.",
+        link: "https://instagram.com"
     }
 ];
 
@@ -173,5 +180,39 @@ const faqs = [
     {
         question: "Do accept card payments?",
         answer: "Yes, we accept card payments for all bookings."
+    }
+];
+
+// Gallery Data
+const galleryItems = [
+    {
+        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        title: "Common Area",
+        caption: "Our cozy common area where travelers meet."
+    },
+    {
+        image: "https://images.unsplash.com/photo-1596276020587-8044fe049813?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        title: "Rooftop",
+        caption: "Enjoy the sunset from our rooftop terrace."
+    },
+    {
+        image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        title: "Details",
+        caption: "Clean and minimalistic private rooms."
+    },
+    {
+        image: "https://images.unsplash.com/photo-1582234372722-c0d6d63322d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        title: "Kitchen",
+        caption: "Fully equipped kitchen for your culinary experiments."
+    },
+    {
+        image: "https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        title: "Dorm Life",
+        caption: "Making friends in the dorms."
+    },
+    {
+        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        title: "Cozy Spaces",
+        caption: "Relax in our comfortable lounges."
     }
 ];

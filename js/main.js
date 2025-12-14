@@ -234,6 +234,28 @@ document.addEventListener('DOMContentLoaded', () => {
         `).join('');
     }
 
+    // Render Gallery
+    const galleryGrid = document.getElementById('gallery-grid');
+    if (galleryGrid && typeof galleryItems !== 'undefined') {
+        galleryGrid.innerHTML = galleryItems.map((item, index) => `
+            <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
+                onclick="openLightbox(this)">
+                <img src="${item.image}"
+                    alt="${item.title}" data-caption="${item.caption}"
+                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
+                    <h4
+                        class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        ${item.title}</h4>
+                    <p
+                        class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                        ${item.caption}</p>
+                </div>
+            </div>
+        `).join('');
+    }
+
     // Experience Modal Functionality
     const expModal = document.getElementById('experience-modal');
     const expModalContent = document.getElementById('experience-modal-content');

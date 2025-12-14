@@ -213,87 +213,8 @@
                     <p class="text-xl text-gray-600 max-w-2xl mx-auto">A glimpse into the Qala life.</p>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    <!-- Gallery Item 1 -->
-                    <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
-                        onclick="openLightbox(this)">
-                        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                            alt="Cozy Common Area" data-caption="Our cozy common area where travelers meet."
-                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
-                            <h4
-                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                Common Area</h4>
-                            <p
-                                class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                                Where stories are shared.</p>
-                        </div>
-                    </div>
-                    <!-- Gallery Item 2 -->
-                    <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
-                        onclick="openLightbox(this)">
-                        <img src="https://images.unsplash.com/photo-1596276020587-8044fe049813?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                            alt="Rooftop View" data-caption="Enjoy the sunset from our rooftop terrace."
-                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
-                            <h4
-                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                Rooftop</h4>
-                            <p
-                                class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                                Sunset vibes.</p>
-                        </div>
-                    </div>
-                    <!-- Gallery Item 3 -->
-                    <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
-                        onclick="openLightbox(this)">
-                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                            alt="Private Room Detail" data-caption="Clean and minimalistic private rooms."
-                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
-                            <h4
-                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                Details</h4>
-                            <p
-                                class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                                Comfort first.</p>
-                        </div>
-                    </div>
-                    <!-- Gallery Item 4 -->
-                    <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
-                        onclick="openLightbox(this)">
-                        <img src="https://images.unsplash.com/photo-1582234372722-c0d6d63322d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                            alt="Kitchen" data-caption="Fully equipped kitchen for your culinary experiments."
-                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
-                            <h4
-                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                Kitchen</h4>
-                            <p
-                                class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                                Cook like a local.</p>
-                        </div>
-                    </div>
-                    <!-- More placeholders for grid effect -->
-                    <div class="relative group cursor-pointer overflow-hidden rounded-lg aspect-square"
-                        onclick="openLightbox(this)">
-                        <img src="https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                            alt="Dorm Life" data-caption="Making friends in the dorms."
-                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
-                            <h4
-                                class="text-white font-bold text-lg translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                Dorm Life</h4>
-                            <p
-                                class="text-gray-300 text-sm translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                                Social atmosphere.</p>
-                        </div>
-                    </div>
+                <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Gallery items will be rendered by JS -->
                 </div>
             </div>
         </section>
