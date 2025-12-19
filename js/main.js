@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="flex justify-between items-center pt-6 border-t border-gray-200">
                         <div>
                             <span class="text-xs text-gray-400 block">Starting from</span>
-                            <span class="text-2xl font-bold text-brand-gold">${room.price}<span class="text-sm text-gray-400 font-normal">/night</span></span>
+                            <span class="text-2xl font-bold text-brand-gold">${room.price}<span class="text-sm text-gray-400 font-normal">/person</span></span>
                         </div>
                         <a href="${room.link}" target="_blank" class="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors">Book Now</a>
                     </div>

@@ -43,28 +43,36 @@ const experiences = [
 // Room Data
 const rooms = [
     {
-        title: "Mixed Dorm (8 Bed)",
-        desc: "Spacious dormitory with privacy curtains, personal lockers, and reading lights.",
-        image: "https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        price: "$15",
+        title: "Standard Double Dorm Room",
+        desc: "A comfortable shared double room offering beautiful city views and a cozy atmosphere.",
+        image: "images/room_image1.jpg",
+        price: "25 ₼",
         badge: "Most Popular",
-        features: ["Free Wi-Fi", "Air Conditioning", "Personal Locker"],
+        features: ["Free Wi-Fi", "Air conditioning", "Shared bathroom", "Towels and slippers"],
         link: "https://booking.com"
     },
     {
-        title: "Female Dorm (6 Bed)",
-        desc: "Secure and cozy dormitory exclusively for female travelers.",
-        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        price: "$18",
-        features: ["Ensuite Bathroom", "Hairdryer", "Vanity Mirror"],
+        title: "4-Bed Male Dormitory Room",
+        desc: "A vibrant shared space for male travelers, featuring four comfortable beds.",
+        image: "images/room_image2.jpg",
+        price: "20 ₼",
+        features: ["Free Wi-Fi", "Air conditioning", "Shared bathroom", "Towels and slippers"],
         link: "https://booking.com"
     },
     {
-        title: "Private Double Room",
-        desc: "Perfect for couples or friends seeking extra privacy and comfort.",
-        image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        price: "$45",
-        features: ["Queen Size Bed", "Smart TV", "Towels Included"],
+        title: "4-Bed Female Dormitory Room",
+        desc: "A shared dormitory room for female travelers, featuring four comfortable beds.",
+        image: "images/room_image3.jpg",
+        price: "20 ₼",
+        features: ["Free Wi-Fi", "Air conditioning", "Shared bathroom", "Towels and slippers"],
+        link: "https://booking.com"
+    },
+    {
+        title: "6-Bed Male Dormitory Room",
+        desc: "A shared dormitory room for male travelers, featuring six comfortable beds.",
+        image: "images/room_image4.jpg",
+        price: "20 ₼",
+        features: ["Free Wi-Fi", "Air conditioning", "Shared bathroom", "Towels and slippers"],
         link: "https://booking.com"
     }
 ];
@@ -78,8 +86,8 @@ const features = [
         colorClass: "blue"
     },
     {
-        title: "Paid Breakfast",
-        desc: "Delicious local start.",
+        title: "Free Breakfast",
+        desc: "Delicious local breakfast.",
         iconPath: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z",
         colorClass: "yellow"
     },
@@ -99,6 +107,24 @@ const features = [
         title: "24/7 Reception",
         desc: "24/7 reception service.",
         iconPath: "M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3",
+        colorClass: "blue"
+    },
+    {
+        title: "Multi Language",
+        desc: "Staff speaks English, Russian, Azerbaijani",
+        iconPath: "m10.5 21 5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 0 1 6-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 0 1-3.827-5.802",
+        colorClass: "green"
+    },
+    {
+        title: "Paid Valet Parking",
+        desc: "Paid underground parking",
+        iconPath: "M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12",
+        colorClass: "yellow"
+    },
+    {
+        title: "Shared Bathroom",
+        desc: "Large and clean bathroom",
+        iconPath: "M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z",
         colorClass: "blue"
     }
 ];
@@ -192,32 +218,42 @@ const faqs = [
 // Gallery Data
 const galleryItems = [
     {
-        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/room_image1.jpg",
         title: "Common Area",
         caption: "Our cozy common area where travelers meet."
     },
     {
-        image: "https://images.unsplash.com/photo-1596276020587-8044fe049813?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/room_image2.jpg",
         title: "Rooftop",
         caption: "Enjoy the sunset from our rooftop terrace."
     },
     {
-        image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/room_image3.jpg",
         title: "Details",
         caption: "Clean and minimalistic private rooms."
     },
     {
-        image: "https://images.unsplash.com/photo-1582234372722-c0d6d63322d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/room_image4.jpg",
         title: "Kitchen",
         caption: "Fully equipped kitchen for your culinary experiments."
     },
     {
-        image: "https://images.unsplash.com/photo-1520277739336-7bf67edfa768?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/room_image5.jpg",
+        title: "Kitchen",
+        caption: "Fully equipped kitchen for your culinary experiments."
+    },
+    {
+        image: "images/general_image.jpg",
         title: "Dorm Life",
         caption: "Making friends in the dorms."
     },
     {
-        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "images/bathroom1.jpg",
+        title: "Cozy Spaces",
+        caption: "Relax in our comfortable lounges."
+    },
+    {
+        image: "images/general_image2.jpg",
         title: "Cozy Spaces",
         caption: "Relax in our comfortable lounges."
     }
