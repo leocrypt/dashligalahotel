@@ -9,6 +9,7 @@
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#1a1a1a">
+    <link rel="icon" type="image/png" href="favicon.png">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -62,7 +63,10 @@
     <header
         class="absolute top-0 left-0 w-full z-50 py-6 px-6 md:px-12 flex justify-between items-center transition-all duration-300"
         id="main-header">
-        <a href="#" class="text-2xl font-bold text-white tracking-wider uppercase">Qala Hostel</a>
+        <a href="#" class="flex items-center gap-3">
+            <img src="images/logo.png" alt="Qala Hostel" class="h-12 w-auto">
+            <span class="text-2xl font-bold text-white tracking-wider">Qala Hostel Ganja</span>
+        </a>
 
         <!-- Desktop Nav -->
         <nav class="hidden md:flex space-x-8">
@@ -320,7 +324,10 @@
     <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div class="col-span-1 md:col-span-2">
-                <h3 class="text-2xl font-bold mb-4">Qala Hostel Ganja</h3>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="images/logo.png" alt="Qala Hostel" class="h-14 w-auto">
+                    <h3 class="text-2xl font-bold">Qala Hostel Ganja</h3>
+                </div>
                 <p class="text-gray-400 max-w-sm">Your home away from home in the heart of Azerbaijan. Experience the
                     culture, meet the people, live the history.</p>
             </div>

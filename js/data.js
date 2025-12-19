@@ -5,7 +5,7 @@
 // Site Color Palette
 // Change these colors to customize the entire site's look
 const siteColors = {
-    primary: '#D4AF37',      // Gold - used for CTAs, accents, highlights
+    primary: '#dd9f35',      // Gold - used for CTAs, accents, highlights
     primaryHover: '#b89127ff', // Darker gold for hover states
     secondary: '#1a1a1a',    // Dark - used for text, headers, footer
     background: '#f9fafb'    // Light gray - page background
