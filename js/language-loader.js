@@ -29,6 +29,7 @@ function switchLanguage(lang) {
         // Update URL and reload
         const newUrl = new URL(window.location);
         newUrl.searchParams.set('lang', lang);
+        newUrl.hash = ''; // Reset anchor/scroll position
         window.location.href = newUrl.toString();
     } else {
         console.error('Unsupported language:', lang);
