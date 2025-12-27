@@ -1,14 +1,52 @@
-// Main Content Data
-// You can edit the content of the website here.
-// Images can be local paths (e.g. "images/room1.jpg") or external URLs.
+// English Language Content Data
+// This file contains all content in English
+// Configuration (colors, links) is in config.js
 
-// Site Color Palette
-// Change these colors to customize the entire site's look
-const siteColors = {
-    primary: '#dd9f35',      // Gold - used for CTAs, accents, highlights
-    primaryHover: '#b89127ff', // Darker gold for hover states
-    secondary: '#1a1a1a',    // Dark - used for text, headers, footer
-    background: '#f9fafb'    // Light gray - page background
+// UI Text
+const uiText = {
+    // Header/Navigation
+    siteName: 'Qala Hostel Ganja',
+    navRooms: 'Rooms',
+    navServices: 'Services',
+    navExperiences: 'Experiences',
+    navGallery: 'Gallery',
+    navLocation: 'Location',
+    bookNow: 'Book Now',
+
+    // Hero Section
+    heroTitle: 'Experience Ganja',
+    heroSubtitle: 'The perfect blend of history, comfort, and culture at Qala Hostel.',
+    exploreRooms: 'Explore Rooms',
+
+    // Section Headings
+    roomsTitle: 'Our Rooms',
+    roomsSubtitle: 'Comfortable, clean, and designed for travelers.',
+    featuresTitle: 'Hostel Features',
+    featuresSubtitle: 'Everything you need for a comfortable stay.',
+    experiencesTitle: 'Ganja Experiences',
+    experiencesSubtitle: 'Discover the hidden gems of Azerbaijan\'s second largest city.',
+    eventsTitle: 'Upcoming Events',
+    eventsSubtitle: 'Join the fun and meet new friends.',
+    galleryTitle: 'Gallery',
+    gallerySubtitle: 'A glimpse into the Qala life.',
+    offersTitle: 'Special Offers',
+    offersSubtitle: 'Save money on your adventures.',
+    faqTitle: 'Frequently Asked Questions',
+    locationTitle: 'Find Us',
+    locationDesc: 'Located in the heart of Ganja, just 5 minutes walk from the main square.',
+
+    // Buttons & Links
+    viewAllActivities: 'View all activities',
+    getDirections: 'Get Directions',
+    viewOnInstagram: 'View on Instagram',
+    startingFrom: 'Starting from',
+    perNight: '/night',
+
+    // Footer
+    footerTagline: 'Your home away from home in the heart of Azerbaijan. Experience the culture, meet the people, live the history.',
+    quickLinks: 'Quick Links',
+    followUs: 'Follow Us',
+    copyright: '© 2025 Qala Hostel Ganja. All rights reserved.'
 };
 
 const experiences = [
@@ -258,3 +296,4 @@ const galleryItems = [
         caption: "Relax in our comfortable lounges."
     }
 ];
+
