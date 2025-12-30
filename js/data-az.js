@@ -11,40 +11,40 @@ const uiText = {
     navExperiences: 'Təcrübələr',
     navGallery: 'Qalereya',
     navLocation: 'Ünvan',
-    bookNow: 'İndi Sifariş Et',
+    bookNow: 'Sifariş Et',
 
     // Hero Section
-    heroTitle: 'Gəncəni Kəşf Et',
-    heroSubtitle: 'Qala Hostelində tarixi, rahatlıq və mədəniyyətin mükəmməl qarışığı.',
-    exploreRooms: 'Otaqları Kəşf Et',
+    heroTitle: 'Gəncəni bizimlə kəşf et',
+    heroSubtitle: 'Qala Hostel, münasib qiymətə rahatlıq və mədəniyyətin mükəmməl qarışığı',
+    exploreRooms: 'Otaqlara bax',
 
     // Section Headings
     roomsTitle: 'Bizim Otaqlar',
-    roomsSubtitle: 'Rahat, təmiz və səyahətçilər üçün dizayn edilib.',
-    featuresTitle: 'Hostel Xüsusiyyətləri',
-    featuresSubtitle: 'Rahat qalmaq üçün lazım olan hər şey.',
+    roomsSubtitle: 'Rahat, təmiz və səyahətçilər üçün dizayn edilmiş otaqlarımızı sizlərə təqdim edirik',
+    featuresTitle: 'Hostel xidmətlərimiz',
+    featuresSubtitle: 'Sizin rahatlığınız üçün hər şeyi biz artıq düşünmüşük',
     experiencesTitle: 'Gəncə Təcrübələri',
-    experiencesSubtitle: 'Azərbaycanın ikinci ən böyük şəhərinin gizli incilərini kəşf edin.',
-    eventsTitle: 'Gələcək Tədbirlər',
-    eventsSubtitle: 'Əyləncəyə qoşulun və yeni dostlar tapın.',
+    experiencesSubtitle: 'Azərbaycanın ikinci ən böyük şəhərinin gizli incilərini kəşf edin',
+    eventsTitle: 'Maraqlı Tədbirlər',
+    eventsSubtitle: 'Şəhərdə keçirilən tədbirlərə qoşulun və yeni dostlar tapın',
     galleryTitle: 'Qalereya',
-    gallerySubtitle: 'Qala həyatına bir nəzər.',
+    gallerySubtitle: 'Qala Hosteldə turist həyatına bir nəzər',
     offersTitle: 'Xüsusi Təkliflər',
-    offersSubtitle: 'Macəralarınızda qənaət edin.',
+    offersSubtitle: 'Gəncə səfərlərinizdə bizimlə qənaət edin',
     faqTitle: 'Tez-tez Verilən Suallar',
-    locationTitle: 'Bizi Tapın',
-    locationDesc: 'Gəncənin mərkəzində, əsas meydandan cəmi 5 dəqiqəlik piyada məsafədə yerləşir.',
+    locationTitle: 'Xəritəyə keçid',
+    locationDesc: 'Gəncənin mərkəzində, əsas meydandan cəmi 5 dəqiqəlik piyada məsafədə yerləşirik',
 
     // Buttons & Links
     viewAllActivities: 'Bütün fəaliyyətlərə bax',
     getDirections: 'İstiqamət Al',
-    viewOnInstagram: 'Instagram-da bax',
+    viewOnInstagram: 'Instagrama keçid',
     startingFrom: 'Qiymət',
     perNight: '/nəfər',
 
     // Footer
-    footerTagline: 'Azərbaycanın mərkəzində evinizdən uzaqda eviniz. Mədəniyyəti yaşayın, insanlarla tanış olun, tarixə toxunun.',
-    quickLinks: 'Sürətli Keçidlər',
+    footerTagline: 'Gəncənin mərkəzində evinizdən uzaqda eviniz. Ən münasib qiymətə Gəncəyə səfər edib mədəniyyəti yaşayın, insanlarla tanış olun, tarixə toxunun.',
+    quickLinks: 'Keçidlər',
     followUs: 'Bizi İzləyin',
     copyright: '© 2025 Qala Hostel Gəncə. Bütün hüquqlar qorunur.'
 };
