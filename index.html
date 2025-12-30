@@ -137,14 +137,34 @@
 
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu"
-        class="fixed inset-0 bg-brand-dark bg-opacity-95 z-40 transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-8">
+        class="fixed inset-0 bg-brand-dark bg-opacity-95 z-[55] transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-8">
         <button id="close-menu-btn" class="absolute top-6 right-6 text-white text-4xl">&times;</button>
-        <a href="#rooms" class="text-2xl text-white mobile-link">Rooms</a>
-        <a href="#features" class="text-2xl text-white mobile-link">Services</a>
-        <a href="#experiences" class="text-2xl text-white mobile-link">Experiences</a>
-        <a href="#gallery" class="text-2xl text-white mobile-link">Gallery</a>
-        <a href="#location" class="text-2xl text-white mobile-link">Location</a>
-        <a href="https://booking.com" class="text-2xl text-brand-gold font-bold mobile-link">Book Now</a>
+        <a href="#rooms" class="text-2xl text-white mobile-link" data-ui-text="navRooms">Rooms</a>
+        <a href="#features" class="text-2xl text-white mobile-link" data-ui-text="navServices">Services</a>
+        <a href="#experiences" class="text-2xl text-white mobile-link" data-ui-text="navExperiences">Experiences</a>
+        <a href="#gallery" class="text-2xl text-white mobile-link" data-ui-text="navGallery">Gallery</a>
+        <a href="#location" class="text-2xl text-white mobile-link" data-ui-text="navLocation">Location</a>
+        <a href="https://booking.com" class="text-2xl text-brand-gold font-bold mobile-link" data-ui-text="bookNow">Book
+            Now</a>
+
+        <!-- Mobile Language Switcher -->
+        <div class="flex items-center gap-8 mt-4 pt-8 border-t border-gray-700 w-48 justify-center">
+            <button onclick="switchLanguage('en')" class="flex flex-col items-center group">
+                <span
+                    class="fi fi-gb text-3xl mb-2 grayscale group-hover:grayscale-0 transition-all opacity-70 group-hover:opacity-100"></span>
+                <span class="text-white text-xs tracking-widest group-hover:text-brand-gold transition-colors">EN</span>
+            </button>
+            <button onclick="switchLanguage('az')" class="flex flex-col items-center group">
+                <span
+                    class="fi fi-az text-3xl mb-2 grayscale group-hover:grayscale-0 transition-all opacity-70 group-hover:opacity-100"></span>
+                <span class="text-white text-xs tracking-widest group-hover:text-brand-gold transition-colors">AZ</span>
+            </button>
+            <button onclick="switchLanguage('ru')" class="flex flex-col items-center group">
+                <span
+                    class="fi fi-ru text-3xl mb-2 grayscale group-hover:grayscale-0 transition-all opacity-70 group-hover:opacity-100"></span>
+                <span class="text-white text-xs tracking-widest group-hover:text-brand-gold transition-colors">RU</span>
+            </button>
+        </div>
     </div>
 
     <!-- Hero Section -->

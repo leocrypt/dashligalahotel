@@ -40,7 +40,7 @@ const uiText = {
     getDirections: 'Get Directions',
     viewOnInstagram: 'View on Instagram',
     startingFrom: 'Starting from',
-    perNight: '/night',
+    perNight: '/person',
 
     // Footer
     footerTagline: 'Your home away from home in the heart of Azerbaijan. Experience the culture, meet the people, live the history.',

@@ -40,7 +40,7 @@ const uiText = {
     getDirections: 'Построить маршрут',
     viewOnInstagram: 'Смотреть в Instagram',
     startingFrom: 'Начиная с',
-    perNight: '/ночь',
+    perNight: '/на человека',
 
     // Footer
     footerTagline: 'Ваш дом вдали от дома в сердце Азербайджана. Познайте культуру, познакомьтесь с людьми, прикоснитесь к истории.',

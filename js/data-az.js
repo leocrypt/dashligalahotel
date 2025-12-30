@@ -39,8 +39,8 @@ const uiText = {
     viewAllActivities: 'Bütün fəaliyyətlərə bax',
     getDirections: 'İstiqamət Al',
     viewOnInstagram: 'Instagram-da bax',
-    startingFrom: 'Başlayır',
-    perNight: '/gecə',
+    startingFrom: 'Qiymət',
+    perNight: '/nəfər',
 
     // Footer
     footerTagline: 'Azərbaycanın mərkəzində evinizdən uzaqda eviniz. Mədəniyyəti yaşayın, insanlarla tanış olun, tarixə toxunun.',
