@@ -5,7 +5,7 @@
 // UI Text
 const uiText = {
     // Header/Navigation
-    siteName: 'Qala Hostel Gəncə',
+    siteName: 'Daşlı Qala Hotel Gəncə',
     navRooms: 'Otaqlar',
     navServices: 'Xidmətlər',
     navExperiences: 'Təcrübələr',
@@ -15,7 +15,7 @@ const uiText = {
 
     // Hero Section
     heroTitle: 'Gəncəni bizimlə kəşf et',
-    heroSubtitle: 'Qala Hostel, münasib qiymətə rahatlıq və mədəniyyətin mükəmməl qarışığı',
+    heroSubtitle: 'Daşlı Qala Hotel, münasib qiymətə rahatlıq və mədəniyyətin mükəmməl qarışığı',
     exploreRooms: 'Otaqlara bax',
 
     // Section Headings
@@ -28,7 +28,7 @@ const uiText = {
     eventsTitle: 'Maraqlı Tədbirlər',
     eventsSubtitle: 'Şəhərdə keçirilən tədbirlərə qoşulun və yeni dostlar tapın',
     galleryTitle: 'Qalereya',
-    gallerySubtitle: 'Qala Hosteldə turist həyatına bir nəzər',
+    gallerySubtitle: 'Daşlı Qala Hoteldə turist həyatına bir nəzər',
     offersTitle: 'Xüsusi Təkliflər',
     offersSubtitle: 'Gəncə səfərlərinizdə bizimlə qənaət edin',
     faqTitle: 'Tez-tez Verilən Suallar',
@@ -46,7 +46,7 @@ const uiText = {
     footerTagline: 'Gəncənin mərkəzində evinizdən uzaqda eviniz. Ən münasib qiymətə Gəncəyə səfər edib mədəniyyəti yaşayın, insanlarla tanış olun, tarixə toxunun.',
     quickLinks: 'Keçidlər',
     followUs: 'Bizi İzləyin',
-    copyright: '© 2025 Qala Hostel Gəncə. Bütün hüquqlar qorunur.'
+    copyright: '© 2025 Daşlı Qala Hotel Gəncə. Bütün hüquqlar qorunur.'
 };
 
 const experiences = [

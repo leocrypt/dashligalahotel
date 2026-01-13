@@ -5,7 +5,7 @@
 // UI Text
 const uiText = {
     // Header/Navigation
-    siteName: 'Хостел Кала Гянджа',
+    siteName: 'Дашли Кала Отель Гянджа',
     navRooms: 'Номера',
     navServices: 'Услуги',
     navExperiences: 'Экскурсии',
@@ -15,7 +15,7 @@ const uiText = {
 
     // Hero Section
     heroTitle: 'Познайте Гянджу',
-    heroSubtitle: 'Идеальное сочетание истории, комфорта и культуры в хостеле Кала.',
+    heroSubtitle: 'Идеальное сочетание истории, комфорта и культуры в Дашли Кала Отель',
     exploreRooms: 'Посмотреть номера',
 
     // Section Headings

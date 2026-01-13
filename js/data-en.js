@@ -5,7 +5,7 @@
 // UI Text
 const uiText = {
     // Header/Navigation
-    siteName: 'Qala Hostel Ganja',
+    siteName: 'Dashli Gala Hotel',
     navRooms: 'Rooms',
     navServices: 'Services',
     navExperiences: 'Experiences',
@@ -15,20 +15,20 @@ const uiText = {
 
     // Hero Section
     heroTitle: 'Experience Ganja',
-    heroSubtitle: 'The perfect blend of history, comfort, and culture at Qala Hostel.',
+    heroSubtitle: 'The perfect blend of history, comfort, and culture at Dashli Gala Hotel.',
     exploreRooms: 'Explore Rooms',
 
     // Section Headings
     roomsTitle: 'Our Rooms',
     roomsSubtitle: 'Comfortable, clean, and designed for travelers.',
-    featuresTitle: 'Hostel Features',
+    featuresTitle: 'Hotel Features',
     featuresSubtitle: 'Everything you need for a comfortable stay.',
     experiencesTitle: 'Ganja Experiences',
     experiencesSubtitle: 'Discover the hidden gems of Azerbaijan\'s second largest city.',
     eventsTitle: 'Upcoming Events',
     eventsSubtitle: 'Join the fun and meet new friends.',
     galleryTitle: 'Gallery',
-    gallerySubtitle: 'A glimpse into the Qala life.',
+    gallerySubtitle: 'A glimpse into the Dashli Gala Hotel life.',
     offersTitle: 'Special Offers',
     offersSubtitle: 'Save money on your adventures.',
     faqTitle: 'Frequently Asked Questions',
@@ -46,7 +46,7 @@ const uiText = {
     footerTagline: 'Your home away from home in the heart of Azerbaijan. Experience the culture, meet the people, live the history.',
     quickLinks: 'Quick Links',
     followUs: 'Follow Us',
-    copyright: '© 2025 Qala Hostel Ganja. All rights reserved.'
+    copyright: '© 2025 Dashli Gala Hotel. All rights reserved.'
 };
 
 const experiences = [
@@ -245,7 +245,7 @@ const faqs = [
     },
     {
         question: "Is Wi-Fi free?",
-        answer: "Absolutely! We provide fast, free Wi-Fi throughout the entire hostel, including all rooms and common areas."
+        answer: "Absolutely! We provide fast, free Wi-Fi throughout the entire Hotel, including all rooms and common areas."
     },
     {
         question: "Do accept card payments?",
