@@ -257,43 +257,63 @@ const faqs = [
 const galleryItems = [
     {
         image: "images/room_image1.jpg",
-        title: "Common Area",
-        caption: "Our cozy common area where travelers meet."
+        title: "Standard Double or Twin Room",
+        caption: "Our cozy standard double or twin rooms."
     },
     {
         image: "images/room_image2.jpg",
-        title: "Rooftop",
-        caption: "Enjoy the sunset from our rooftop terrace."
+        title: "Standard Triple Room",
+        caption: "Enjoy the sunset from our standard triple rooms."
     },
     {
         image: "images/room_image3.jpg",
-        title: "Details",
-        caption: "Clean and minimalistic private rooms."
+        title: "Deluxe Family Rooms",
+        caption: "Clean and large family rooms."
     },
     {
         image: "images/room_image4.jpg",
-        title: "Kitchen",
-        caption: "Fully equipped kitchen for your culinary experiments."
+        title: "Family Suites",
+        caption: "Fully equipped family suites for your best experience."
     },
     {
         image: "images/room_image5.jpg",
-        title: "Kitchen",
-        caption: "Fully equipped kitchen for your culinary experiments."
+        title: "Deluxe Family Rooms",
+        caption: "Nicely equipped family rooms for your best experience."
     },
     {
         image: "images/general_image.jpg",
-        title: "Dorm Life",
-        caption: "Making friends in the dorms."
+        title: "Hotel building",
+        caption: "Our hotel building."
     },
     {
         image: "images/bathroom1.jpg",
-        title: "Cozy Spaces",
-        caption: "Relax in our comfortable lounges."
+        title: "Hotel Bathroom",
+        caption: "Clean and large hotel bathrooms."
+    },
+    {
+        image: "images/bathroom2.jpg",
+        title: "Hotel Bathroom",
+        caption: "Clean and large hotel bathrooms."
     },
     {
         image: "images/general_image2.jpg",
-        title: "Cozy Spaces",
-        caption: "Relax in our comfortable lounges."
-    }
+        title: "Cozy and Large Spaces",
+        caption: "Relax in our cozy and large corridors and lounges."
+    },
+    {
+        image: "images/Deluxe-Family-Room-sitting-area.jpg",
+        title: "Deluxe Family Room Sitting Area",
+        caption: "Relax in our cozy and large sitting area."
+    },
+    {
+        image: "images/Family-Suite1.jpg",
+        title: "Family Suite",
+        caption: "Relax in our family suite."
+    },
+    {
+        image: "images/general-entrance.jpg",
+        title: "Hotel Reception",
+        caption: "Our hotel reception."
+    },
 ];
 
