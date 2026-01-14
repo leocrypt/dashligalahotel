@@ -36,8 +36,8 @@ const languageConfig = {
 
 // External Links (can be updated independently of content)
 const externalLinks = {
-    booking: 'https://booking.com',
-    instagram: 'https://instagram.com',
-    facebook: 'https://facebook.com',
-    tiktok: 'https://tiktok.com'
+    booking: 'https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN',
+    instagram: 'https://www.instagram.com/dashligalahotel/',
+    facebook: 'https://www.facebook.com/dashligalahotel',
+    tiktok: 'https://www.tiktok.com/@dasligalahotel'
 };

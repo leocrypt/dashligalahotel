@@ -25,8 +25,8 @@ const uiText = {
     featuresSubtitle: 'Sizin rahatlığınız üçün hər şeyi biz artıq düşünmüşük',
     experiencesTitle: 'Gəncə Təcrübələri',
     experiencesSubtitle: 'Azərbaycanın ikinci ən böyük şəhərinin gizli incilərini kəşf edin',
-    eventsTitle: 'Maraqlı Tədbirlər',
-    eventsSubtitle: 'Şəhərdə keçirilən tədbirlərə qoşulun və yeni dostlar tapın',
+    eventsTitle: 'Yerli Tədbirlər',
+    eventsSubtitle: 'Gəncə şəhərində və ətraf rayonlarda keçirilən tədbirlərə qoşulun və unudulmaz təcrübələr yaşayın',
     galleryTitle: 'Qalereya',
     gallerySubtitle: 'Daşlı Qala Hoteldə turist həyatına bir nəzər',
     offersTitle: 'Xüsusi Təkliflər',
@@ -82,36 +82,36 @@ const experiences = [
 const rooms = [
     {
         title: "Standart İki Nəfərlik Otaq",
-        desc: "Gözəl şəhər mənzərəsi və rahat atmosfer təklif edən rahat ortaq iki nəfərlik otaq.",
+        desc: "Gözəl şəhər mənzərəsi və rahat atmosfer təklif edən rahat iki nəfərlik otaq.",
         image: "images/room_image1.jpg",
-        price: "25 ₼",
+        price: "120 ₼",
         badge: "Ən Populyar",
-        features: ["Pulsuz Wi-Fi", "Kondisioner", "Ortaq hamam", "Dəsmallar və başmaqlar"],
-        link: "https://booking.com"
+        features: ["Pulsuz Wi-Fi", "Kondisioner", "Yeni hamam", "Dəsmallar və başmaqlar"],
+        link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     },
     {
-        title: "4 Çarpayılı Kışi Yataqxanası",
-        desc: "Dörd rahat çarpayı olan kişi səyahətçilər üçün canlı ortaq məkan.",
+        title: "Standart Üç Nəfərlik Otaq",
+        desc: "Gözəl şəhər mənzərəsi və rahat atmosfer təklif edən rahat üç nəfərlik otaq.",
         image: "images/room_image2.jpg",
-        price: "20 ₼",
-        features: ["Pulsuz Wi-Fi", "Kondisioner", "Ortaq hamam", "Dəsmallar və başmaqlar"],
-        link: "https://booking.com"
+        price: "150 ₼",
+        features: ["Pulsuz Wi-Fi", "Kondisioner", "Yeni hamam", "Dəsmallar və başmaqlar"],
+        link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     },
     {
-        title: "4 Çarpayılı Qadın Yataqxanası",
-        desc: "Dörd rahat çarpayı olan qadın səyahətçilər üçün ortaq yataqxana.",
+        title: "Delyuks Ailə Otağı",
+        desc: "Delyuks aile otağı. Minimum 2 nəfər üçün başlayan qiymətlər.",
         image: "images/room_image3.jpg",
-        price: "20 ₼",
-        features: ["Pulsuz Wi-Fi", "Kondisioner", "Ortaq hamam", "Dəsmallar və başmaqlar"],
-        link: "https://booking.com"
+        price: "185 ₼",
+        features: ["Pulsuz Wi-Fi", "Kondisioner", "Yeni hamam", "Dəsmallar və başmaqlar"],
+        link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     },
     {
-        title: "6 Çarpayılı Kışi Yataqxanası",
-        desc: "Altı rahat çarpayı olan kişi səyahətçilər üçün ortaq yataqxana.",
+        title: "Ailə Süitləri",
+        desc: "Ailə Süitləri. Minimum 2 nəfər üçün başlayan qiymətlər.",
         image: "images/room_image4.jpg",
-        price: "20 ₼",
-        features: ["Pulsuz Wi-Fi", "Kondisioner", "Ortaq hamam", "Dəsmallar və başmaqlar"],
-        link: "https://booking.com"
+        price: "195 ₼",
+        features: ["Pulsuz Wi-Fi", "Kondisioner", "Yeni hamam", "Dəsmallar və başmaqlar"],
+        link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     }
 ];
 
@@ -136,7 +136,7 @@ const features = [
         colorClass: "green"
     },
     {
-        title: "Beynəlxalq Icma",
+        title: "Beynəlxalq turist Icma",
         desc: "Dünyanın hər yerindən səyahətçilərlə tanış olun.",
         iconPath: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z",
         colorClass: "red"
@@ -257,42 +257,62 @@ const faqs = [
 const galleryItems = [
     {
         image: "images/room_image1.jpg",
-        title: "Ümumi Sahə",
-        caption: "Səyahətçilərin görüşdüyü rahat ümumi sahəmiz."
+        title: "Standart 2 nəfərlik otaqlar",
+        caption: "Rahat standart iki nəfərlik otaqlarımız."
     },
     {
         image: "images/room_image2.jpg",
-        title: "Dam",
-        caption: "Dam terramızdan gün batımından həzz alın."
+        title: "Standart 3 nəfərlik otaqlar",
+        caption: "Standart üç nəfərlik otaqlarımızda gün batımından həzz alın."
     },
     {
         image: "images/room_image3.jpg",
-        title: "Təfərrüatlar",
-        caption: "Təmiz və minimalist şəxsi otaqlar."
+        title: "Delyuks Ailə Otaqları",
+        caption: "Təmiz və geniş ailə otaqları."
     },
     {
         image: "images/room_image4.jpg",
-        title: "Mətbəx",
-        caption: "Kulinar təcrübələriniz üçün tam təchiz olunmuş mətbəx."
+        title: "Ailə Süitləri",
+        caption: "Ən yaxşı təcrübəniz üçün tam təchiz olunmuş ailəvi süitlər."
     },
     {
         image: "images/room_image5.jpg",
-        title: "Mətbəx",
-        caption: "Kulinar təcrübələriniz üçün tam təchiz olunmuş mətbəx."
+        title: "Delyuks Ailə Otaqları",
+        caption: "Ən yaxşı təcrübəniz üçün gözəl təchiz olunmuş ailə otaqları."
     },
     {
         image: "images/general_image.jpg",
-        title: "Yataqxana Həyatı",
-        caption: "Yataqxanalarda dostlar tapırıq."
+        title: "Hotel building",
+        caption: "Our hotel building."
     },
     {
         image: "images/bathroom1.jpg",
-        title: "Rahat Məkanlar",
-        caption: "Rahat salonlarımızda dincəlin."
+        title: "Hotel Bathroom",
+        caption: "Clean and large hotel bathrooms."
+    },
+    {
+        image: "images/bathroom2.jpg",
+        title: "Hotel Bathroom",
+        caption: "Clean and large hotel bathrooms."
     },
     {
         image: "images/general_image2.jpg",
-        title: "Rahat Məkanlar",
-        caption: "Rahat salonlarımızda dincəlin."
+        title: "Cozy and Large Spaces",
+        caption: "Relax in our cozy and large corridors and lounges."
+    },
+    {
+        image: "images/Deluxe-Family-Room-sitting-area.jpg",
+        title: "Deluxe Family Room Sitting Area",
+        caption: "Relax in our cozy and large sitting area."
+    },
+    {
+        image: "images/Family-Suite1.jpg",
+        title: "Family Suite",
+        caption: "Relax in our family suite."
+    },
+    {
+        image: "images/general-entrance.jpg",
+        title: "Hotel Reception",
+        caption: "Our hotel reception."
     }
 ];

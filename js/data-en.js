@@ -87,7 +87,7 @@ const rooms = [
         price: "120 ₼",
         badge: "Most Popular",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
-        link: "https://booking.com"
+        link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     },
     {
         title: "Standard Triple Room",
@@ -95,7 +95,7 @@ const rooms = [
         image: "images/room_image2.jpg",
         price: "150 ₼",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
-        link: "https://booking.com"
+        link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     },
     {
         title: "Deluxe Family Room",
@@ -103,7 +103,7 @@ const rooms = [
         image: "images/room_image3.jpg",
         price: "185 ₼",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
-        link: "https://booking.com"
+        link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     },
     {
         title: "Family Suite",
@@ -111,7 +111,7 @@ const rooms = [
         image: "images/room_image4.jpg",
         price: "195 ₼",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
-        link: "https://booking.com"
+        link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     }
 ];
 
@@ -314,6 +314,6 @@ const galleryItems = [
         image: "images/general-entrance.jpg",
         title: "Hotel Reception",
         caption: "Our hotel reception."
-    },
+    }
 ];
 
