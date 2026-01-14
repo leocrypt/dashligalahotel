@@ -40,7 +40,7 @@ const uiText = {
     getDirections: 'Get Directions',
     viewOnInstagram: 'View on Instagram',
     startingFrom: 'Starting from',
-    perNight: '/person',
+    perNight: '/night',
 
     // Footer
     footerTagline: 'Your home away from home in the heart of Azerbaijan. Experience the culture, meet the people, live the history.',
@@ -84,7 +84,7 @@ const rooms = [
         title: "Standard Double or Twin Room",
         desc: "A comfortable double or twin room offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image1.jpg",
-        price: "25 ₼",
+        price: "120 ₼",
         badge: "Most Popular",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://booking.com"
@@ -93,7 +93,7 @@ const rooms = [
         title: "Standard Triple Room",
         desc: "A comfortable triple room offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image2.jpg",
-        price: "20 ₼",
+        price: "150 ₼",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://booking.com"
     },
@@ -101,7 +101,7 @@ const rooms = [
         title: "Deluxe Family Room",
         desc: "A comfortable family room offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image3.jpg",
-        price: "20 ₼",
+        price: "185 ₼",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://booking.com"
     },
@@ -109,7 +109,7 @@ const rooms = [
         title: "Family Suite",
         desc: "A comfortable family suite offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image4.jpg",
-        price: "20 ₼",
+        price: "195 ₼",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://booking.com"
     }

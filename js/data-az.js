@@ -21,7 +21,7 @@ const uiText = {
     // Section Headings
     roomsTitle: 'Bizim Otaqlar',
     roomsSubtitle: 'Rahat, təmiz və səyahətçilər üçün dizayn edilmiş otaqlarımızı sizlərə təqdim edirik',
-    featuresTitle: 'Hostel xidmətlərimiz',
+    featuresTitle: 'Hotel xidmətlərimiz',
     featuresSubtitle: 'Sizin rahatlığınız üçün hər şeyi biz artıq düşünmüşük',
     experiencesTitle: 'Gəncə Təcrübələri',
     experiencesSubtitle: 'Azərbaycanın ikinci ən böyük şəhərinin gizli incilərini kəşf edin',
@@ -40,7 +40,7 @@ const uiText = {
     getDirections: 'İstiqamət Al',
     viewOnInstagram: 'Instagrama keçid',
     startingFrom: 'Qiymət',
-    perNight: '/nəfər',
+    perNight: '/otaq',
 
     // Footer
     footerTagline: 'Gəncənin mərkəzində evinizdən uzaqda eviniz. Ən münasib qiymətə Gəncəyə səfər edib mədəniyyəti yaşayın, insanlarla tanış olun, tarixə toxunun.',
