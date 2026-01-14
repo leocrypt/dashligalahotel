@@ -81,36 +81,36 @@ const experiences = [
 // Room Data
 const rooms = [
     {
-        title: "Standard Double Dorm Room",
-        desc: "A comfortable shared double room offering beautiful city views and a cozy atmosphere.",
+        title: "Standard Double or Twin Room",
+        desc: "A comfortable double or twin room offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image1.jpg",
         price: "25 ₼",
         badge: "Most Popular",
-        features: ["Free Wi-Fi", "Air conditioning", "Shared bathroom", "Towels and slippers"],
+        features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://booking.com"
     },
     {
-        title: "4-Bed Male Dormitory Room",
-        desc: "A vibrant shared space for male travelers, featuring four comfortable beds.",
+        title: "Standard Triple Room",
+        desc: "A comfortable triple room offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image2.jpg",
         price: "20 ₼",
-        features: ["Free Wi-Fi", "Air conditioning", "Shared bathroom", "Towels and slippers"],
+        features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://booking.com"
     },
     {
-        title: "4-Bed Female Dormitory Room",
-        desc: "A shared dormitory room for female travelers, featuring four comfortable beds.",
+        title: "Deluxe Family Room",
+        desc: "A comfortable family room offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image3.jpg",
         price: "20 ₼",
-        features: ["Free Wi-Fi", "Air conditioning", "Shared bathroom", "Towels and slippers"],
+        features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://booking.com"
     },
     {
-        title: "6-Bed Male Dormitory Room",
-        desc: "A shared dormitory room for male travelers, featuring six comfortable beds.",
+        title: "Family Suite",
+        desc: "A comfortable family suite offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image4.jpg",
         price: "20 ₼",
-        features: ["Free Wi-Fi", "Air conditioning", "Shared bathroom", "Towels and slippers"],
+        features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://booking.com"
     }
 ];
