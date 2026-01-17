@@ -1,9 +1,13 @@
-const CACHE_NAME = 'qalahostel-v1';
+const CACHE_NAME = 'dashliqalahotel-v1';
 const ASSETS = [
     './index.html',
     './css/styles.css',
     './js/main.js',
-    './manifest.json'
+    './js/config.js',
+    './js/language-loader.js',
+    './manifest.json',
+    './images/logo-optimized.png',
+    './favicon.png'
 ];
 
 self.addEventListener('install', (e) => {
