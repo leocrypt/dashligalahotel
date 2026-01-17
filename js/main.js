@@ -45,6 +45,17 @@ function initApp() {
         });
     }
 
+    // Set social media links from externalLinks config
+    if (typeof externalLinks !== 'undefined') {
+        const facebookLink = document.getElementById('footer-facebook');
+        const instagramLink = document.getElementById('footer-instagram');
+        const tiktokLink = document.getElementById('footer-tiktok');
+
+        if (facebookLink) facebookLink.href = externalLinks.facebook;
+        if (instagramLink) instagramLink.href = externalLinks.instagram;
+        if (tiktokLink) tiktokLink.href = externalLinks.tiktok;
+    }
+
     // Render Dynamic Content (Rooms, Experiences, etc.)
     renderDynamicContent();
 
