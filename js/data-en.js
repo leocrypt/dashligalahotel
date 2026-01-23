@@ -13,6 +13,11 @@ const uiText = {
     navLocation: 'Location',
     bookNow: 'Book Now',
 
+    // Meta Data
+    metaTitle: 'Dashli Gala Hotel - Experience Ganja',
+    metaDescription: 'Experience the perfect blend of history, comfort, and culture at Dashli Gala Hotel in Ganja, Azerbaijan. Book your stay today!',
+    metaKeywords: 'Dashli Gala Hotel, Ganja Hotel, Azerbaijan Hotel, Ganja Accommodation, Hostel Ganja, Dashli Gala',
+
     // Hero Section
     heroTitle: 'Experience Ganja',
     heroSubtitle: 'The perfect blend of history, comfort, and culture at Dashli Gala Hotel.',

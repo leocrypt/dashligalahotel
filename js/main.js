@@ -79,6 +79,23 @@ function initApp() {
         });
 
         console.log(`✅ Translated ${translatedCount} UI elements`);
+
+        // Update Page Title and Meta Description
+        if (uiText.metaTitle) {
+            document.title = uiText.metaTitle;
+        }
+        if (uiText.metaDescription) {
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) {
+                metaDesc.setAttribute('content', uiText.metaDescription);
+            }
+        }
+        if (uiText.metaKeywords) {
+            const metaKeywords = document.querySelector('meta[name="keywords"]');
+            if (metaKeywords) {
+                metaKeywords.setAttribute('content', uiText.metaKeywords);
+            }
+        }
     }
 
     // Call renderUIText after a brief delay to ensure data is loaded

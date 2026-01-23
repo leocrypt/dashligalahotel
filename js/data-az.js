@@ -13,6 +13,11 @@ const uiText = {
     navLocation: 'Ünvan',
     bookNow: 'Sifariş Et',
 
+    // Meta Data
+    metaTitle: 'Daşlı Qala Hotel - Gəncəni Kəşf Edin',
+    metaDescription: 'Daşlı Qala Hoteldə tarix, rahatlıq və mədəniyyətin mükəmməl qarışığını yaşayın. Gəncədə yerləşən otelimizdə yerinizi bu gün sifariş edin!',
+    metaKeywords: 'Daşlı Qala Hotel, Gəncə Otel, Azərbaycan Otel, Gəncə Qonaqlama, Hostel Gəncə, Daşlı Qala',
+
     // Hero Section
     heroTitle: 'Gəncəni bizimlə kəşf et',
     heroSubtitle: 'Daşlı Qala Hotel, münasib qiymətə rahatlıq və mədəniyyətin mükəmməl qarışığı',
