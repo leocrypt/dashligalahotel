@@ -69,6 +69,11 @@
     visibility: hidden;
 }
 
+/* Prevent scroll while preloader is active */
+body.preloader-active {
+    overflow: hidden;
+}
+
 /* Logo wrapper */
 #preloader-logo-wrap {
     display: flex;

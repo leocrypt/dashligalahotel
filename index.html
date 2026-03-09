@@ -550,32 +550,27 @@
         (function () {
             var preloader = document.getElementById('preloader');
 
-            // Lock scroll while loading
-            document.body.style.overflow = 'hidden';
+            // Use a CSS class to lock scroll so modal logic (which resets inline style) won't interfere
+            document.body.classList.add('preloader-active');
 
             function dismissPreloader() {
                 if (!preloader || preloader.classList.contains('fade-out')) return;
                 preloader.classList.add('fade-out');
-                // Restore scroll and remove element after transition
-                document.body.style.overflow = '';
+                document.body.classList.remove('preloader-active');
                 preloader.addEventListener('transitionend', function () {
                     preloader.remove();
                 }, { once: true });
             }
 
-            // Dismiss as soon as all resources are loaded
-            if (document.readyState === 'complete') {
-                // Already loaded (e.g. cached page)
-                setTimeout(dismissPreloader, 300);
-            } else {
-                window.addEventListener('load', function () {
-                    // Small grace period so the progress bar animation completes
-                    setTimeout(dismissPreloader, 400);
-                });
-            }
+            // Primary trigger: wait for main.js to signal that ALL dynamic content
+            // (language data + DOM rendering + translations) is fully ready.
+            window.addEventListener('appReady', function () {
+                // Brief pause so the last paint frame completes before fading out
+                setTimeout(dismissPreloader, 200);
+            }, { once: true });
 
-            // Hard safety timeout — dismiss no matter what after 5 s
-            setTimeout(dismissPreloader, 5000);
+            // Safety fallback — dismiss after 8 s no matter what
+            setTimeout(dismissPreloader, 8000);
         })();
     </script>
 </body>

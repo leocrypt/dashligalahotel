@@ -56,9 +56,6 @@ function initApp() {
         if (tiktokLink) tiktokLink.href = externalLinks.tiktok;
     }
 
-    // Render Dynamic Content (Rooms, Experiences, etc.)
-    renderDynamicContent();
-
     // Render UI Text from uiText object
     function renderUIText() {
         if (typeof uiText === 'undefined') {
@@ -98,8 +95,13 @@ function initApp() {
         }
     }
 
-    // Call renderUIText after a brief delay to ensure data is loaded
-    setTimeout(renderUIText, 150);
+    // Render dynamic content (rooms, gallery, etc.) then apply translations,
+    // then signal the preloader that everything is painted and ready.
+    renderDynamicContent();
+    renderUIText();
+
+    console.log('✅ App fully rendered — signalling preloader');
+    window.dispatchEvent(new Event('appReady'));
 
 
 
