@@ -74,6 +74,11 @@ body.preloader-active {
     overflow: hidden;
 }
 
+/* Fix 6: Prevent scroll while a modal is open (separate from preloader) */
+body.modal-open {
+    overflow: hidden;
+}
+
 /* Logo wrapper */
 #preloader-logo-wrap {
     display: flex;
@@ -115,7 +120,9 @@ body.preloader-active {
     width: 0%;
     background: linear-gradient(90deg, #d4af37, #f0d060, #d4af37);
     background-size: 200% 100%;
-    animation: preloader-bar-fill 1.8s ease forwards, preloader-shimmer 1.5s linear infinite;
+    /* Fix 4: width is now driven by JS milestones; keep only the shimmer */
+    animation: preloader-shimmer 1.5s linear infinite;
+    transition: width 0.4s ease;
 }
 
 /* Dot spinner beneath logo */

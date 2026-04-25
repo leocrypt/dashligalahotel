@@ -89,7 +89,8 @@ const rooms = [
         title: "Standard Double or Twin Room",
         desc: "A comfortable double or twin room offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image1.jpg",
-        price: "120 ₼",
+        price: "100 ₼",
+        originalPrice: "120 ₼",
         badge: "Most Popular",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
@@ -98,7 +99,8 @@ const rooms = [
         title: "Standard Triple Room",
         desc: "A comfortable triple room offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image2.jpg",
-        price: "150 ₼",
+        price: "130 ₼",
+        originalPrice: "150 ₼",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     },
@@ -106,7 +108,8 @@ const rooms = [
         title: "Deluxe Family Room",
         desc: "A comfortable family room offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image3.jpg",
-        price: "185 ₼",
+        price: "160 ₼",
+        originalPrice: "185 ₼",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     },
@@ -114,7 +117,8 @@ const rooms = [
         title: "Family Suite",
         desc: "A comfortable family suite offering beautiful city views and a cozy atmosphere.",
         image: "images/room_image4.jpg",
-        price: "195 ₼",
+        price: "170 ₼",
+        originalPrice: "195 ₼",
         features: ["Free Wi-Fi", "Air conditioning", "Modern Bathroom", "Towels and slippers"],
         link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     }

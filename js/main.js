@@ -100,6 +100,10 @@ function initApp() {
     renderDynamicContent();
     renderUIText();
 
+    // Fix 4: Advance progress bar to 100% right before signalling ready
+    var _readyBar = document.getElementById('preloader-bar');
+    if (_readyBar) _readyBar.style.width = '100%';
+
     console.log('✅ App fully rendered — signalling preloader');
     window.dispatchEvent(new Event('appReady'));
 
@@ -183,7 +187,7 @@ function initApp() {
         setTimeout(() => {
             lightbox.classList.remove('opacity-0');
         }, 10);
-        document.body.style.overflow = 'hidden'; // Prevent scrolling
+        document.body.classList.add('modal-open'); // Fix 6: class-based scroll lock
     };
 
     function closeLightbox() {
@@ -192,7 +196,7 @@ function initApp() {
             lightbox.classList.add('hidden');
             lightboxImg.src = '';
         }, 300);
-        document.body.style.overflow = '';
+        document.body.classList.remove('modal-open'); // Fix 6
     }
 
     if (lightboxClose) {
@@ -260,12 +264,8 @@ function initApp() {
                                 </li>
                             `).join('')}
                         </ul>
-                        <div class="flex justify-between items-center pt-6 border-t border-gray-200">
-                            <div>
-                                <span class="text-xs text-gray-400 block">${uiText.startingFrom || 'Starting from'}</span>
-                                <span class="text-2xl font-bold text-brand-gold">${room.price}<span class="text-sm text-gray-400 font-normal">${uiText.perNight || '/night'}</span></span>
-                            </div>
-                            <a href="${room.link}" target="_blank" class="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors">${uiText.bookNow || 'Book Now'}</a>
+                        <div class="pt-6 border-t border-gray-200">
+                            <a href="${room.link}" target="_blank" class="block w-full text-center bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors font-semibold">${uiText.bookNow || 'Book Now'}</a>
                         </div>
                     </div>
                 </div>
@@ -396,7 +396,7 @@ function initApp() {
             expModalContent.classList.remove('scale-95');
             expModalContent.classList.add('scale-100');
         }, 10);
-        document.body.style.overflow = 'hidden';
+        document.body.classList.add('modal-open'); // Fix 6: class-based scroll lock
     };
 
     function closeExpModal() {
@@ -406,7 +406,7 @@ function initApp() {
         setTimeout(() => {
             expModal.classList.add('hidden');
         }, 300);
-        document.body.style.overflow = '';
+        document.body.classList.remove('modal-open'); // Fix 6
     }
 
     if (expModalClose) {
@@ -460,11 +460,22 @@ function initApp() {
 // Set up event listeners
 document.addEventListener('DOMContentLoaded', () => {
     domReady = true;
+    // Fix 4: Advance progress bar to 50% to signal DOM is ready
+    var _domBar = document.getElementById('preloader-bar');
+    if (_domBar) _domBar.style.width = '50%';
     initApp();
 });
 
-window.addEventListener('languageDataLoaded', () => {
+// Fix 1: Guard against languageDataLoaded firing before this listener was registered
+// (can happen when the data file is served from cache on a fast connection)
+if (typeof uiText !== 'undefined') {
+    // Data already available — set flag synchronously and attempt init
     dataReady = true;
     initApp();
-});
+} else {
+    window.addEventListener('languageDataLoaded', () => {
+        dataReady = true;
+        initApp();
+    });
+}
 

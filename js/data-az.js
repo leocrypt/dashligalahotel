@@ -89,7 +89,8 @@ const rooms = [
         title: "Standart İki Nəfərlik Otaq",
         desc: "Gözəl şəhər mənzərəsi və rahat atmosfer təklif edən rahat iki nəfərlik otaq.",
         image: "images/room_image1.jpg",
-        price: "120 ₼",
+        price: "100 ₼",
+        originalPrice: "120 ₼",
         badge: "Ən Populyar",
         features: ["Pulsuz Wi-Fi", "Kondisioner", "Yeni hamam", "Dəsmallar və başmaqlar"],
         link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
@@ -98,7 +99,8 @@ const rooms = [
         title: "Standart Üç Nəfərlik Otaq",
         desc: "Gözəl şəhər mənzərəsi və rahat atmosfer təklif edən rahat üç nəfərlik otaq.",
         image: "images/room_image2.jpg",
-        price: "150 ₼",
+        price: "130 ₼",
+        originalPrice: "150 ₼",
         features: ["Pulsuz Wi-Fi", "Kondisioner", "Yeni hamam", "Dəsmallar və başmaqlar"],
         link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     },
@@ -106,7 +108,8 @@ const rooms = [
         title: "Delyuks Ailə Otağı",
         desc: "Delyuks aile otağı. Minimum 2 nəfər üçün başlayan qiymətlər.",
         image: "images/room_image3.jpg",
-        price: "185 ₼",
+        price: "160 ₼",
+        originalPrice: "185 ₼",
         features: ["Pulsuz Wi-Fi", "Kondisioner", "Yeni hamam", "Dəsmallar və başmaqlar"],
         link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     },
@@ -114,7 +117,8 @@ const rooms = [
         title: "Ailə Süitləri",
         desc: "Ailə Süitləri. Minimum 2 nəfər üçün başlayan qiymətlər.",
         image: "images/room_image4.jpg",
-        price: "195 ₼",
+        price: "170 ₼",
+        originalPrice: "195 ₼",
         features: ["Pulsuz Wi-Fi", "Kondisioner", "Yeni hamam", "Dəsmallar və başmaqlar"],
         link: "https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
     }

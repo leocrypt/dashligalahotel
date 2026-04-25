@@ -89,7 +89,8 @@ const rooms = [
         title: "Стандартный двухместный номер",
         desc: "Комфортный общий двухместный номер с прекрасным видом на город и уютной атмосферой.",
         image: "images/room_image1.jpg",
-        price: "25 ₼",
+        price: "20 ₼",
+        originalPrice: "25 ₼",
         badge: "Популярный",
         features: ["Бесплатный Wi-Fi", "Кондиционер", "Общая ванная", "Полотенца и тапочки"],
         link: "https://booking.com"
@@ -98,7 +99,8 @@ const rooms = [
         title: "4-местный мужской номер",
         desc: "Яркое общее пространство для путешественников-мужчин с четырьмя удобными кроватями.",
         image: "images/room_image2.jpg",
-        price: "20 ₼",
+        price: "16 ₼",
+        originalPrice: "20 ₼",
         features: ["Бесплатный Wi-Fi", "Кондиционер", "Общая ванная", "Полотенца и тапочки"],
         link: "https://booking.com"
     },
@@ -106,7 +108,8 @@ const rooms = [
         title: "4-местный женский номер",
         desc: "Общий номер для женщин с четырьмя удобными кроватями.",
         image: "images/room_image3.jpg",
-        price: "20 ₼",
+        price: "16 ₼",
+        originalPrice: "20 ₼",
         features: ["Бесплатный Wi-Fi", "Кондиционер", "Общая ванная", "Полотенца и тапочки"],
         link: "https://booking.com"
     },
@@ -114,7 +117,8 @@ const rooms = [
         title: "6-местный мужской номер",
         desc: "Общий номер для мужчин с шестью удобными кроватями.",
         image: "images/room_image4.jpg",
-        price: "20 ₼",
+        price: "16 ₼",
+        originalPrice: "20 ₼",
         features: ["Бесплатный Wi-Fi", "Кондиционер", "Общая ванная", "Полотенца и тапочки"],
         link: "https://booking.com"
     }
