@@ -43,7 +43,7 @@ function getCurrentLanguage() {
 
 // Dynamically load the language-specific data file as a script
 const dataScript = document.createElement('script');
-dataScript.src = `js/data-${currentLanguage}.js`;
+dataScript.src = `js/data-${currentLanguage}.js?v=2`;
 dataScript.onload = function () {
     console.log(`✅ Language data loaded: ${currentLanguage}`);
 
