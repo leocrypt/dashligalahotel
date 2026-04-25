@@ -51,7 +51,7 @@ const uiText = {
     footerTagline: 'Gəncənin mərkəzində evinizdən uzaqda eviniz. Ən münasib qiymətə Gəncəyə səfər edib mədəniyyəti yaşayın, insanlarla tanış olun, tarixə toxunun.',
     quickLinks: 'Keçidlər',
     followUs: 'Bizi İzləyin',
-    copyright: '© 2025 Daşlı Qala Hotel Gəncə. Bütün hüquqlar qorunur.'
+    copyright: '© 2026 Daşlı Qala Hotel Gəncə. Bütün hüquqlar qorunur.'
 };
 
 const experiences = [
@@ -64,19 +64,19 @@ const experiences = [
         badge: "Pulsuz"
     },
     {
-        title: "Şərab Dadımı",
+        title: "Göygöl Şərab Turu",
         desc: "Yerli üzümlükləri ziyarət edin və regionun ən yaxşı şərablarını dadın. Şərab sevənlər üçün mükəmməl axşam.",
         image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         link: "https://instagram.com"
     },
     {
-        title: "Hacıkənd Meşəsi Gəzintisi",
+        title: "Hacıkənd təbiət turu",
         desc: "Şəhərdən cəmi 30 dəqiqəlik məsafədə təbiətə qaçın. Hacıkənd Meşəsinin təmiz havasından və gözəl cığırlarından həzz alın.",
         image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         link: "https://instagram.com"
     },
     {
-        title: "Azərbaycan Yemək Dərsi",
+        title: "Milli təamlar üzrə masterklas",
         desc: "Dolma və Plov kimi ənənəvi Azərbaycan yeməklərini bişirməyi öyrənin. Dadlı praktiki təcrübə.",
         image: "https://images.unsplash.com/photo-1582234372722-c0d6d63322d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         link: "https://instagram.com"
@@ -254,7 +254,7 @@ const faqs = [
     },
     {
         question: "Wi-Fi pulsuzmu?",
-        answer: "Əlbəttə! Bütün otaqlar və ümumi sahələr daxil olmaqla, bütün hosteldə sürətli, pulsuz Wi-Fi təqdim edirik."
+        answer: "Əlbəttə! Bütün otaqlar və ümumi sahələr daxil olmaqla, bütün hoteldə sürətli, pulsuz Wi-Fi təqdim edirik."
     },
     {
         question: "Kart ilə ödəniş qəbul edirsinizmi?",
