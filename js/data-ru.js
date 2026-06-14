@@ -44,6 +44,7 @@ const uiText = {
     viewAllActivities: 'Посмотреть все мероприятия',
     getDirections: 'Построить маршрут',
     viewOnInstagram: 'Смотреть в Instagram',
+    bookOnWhatsApp: 'Забронировать в WhatsApp',
     startingFrom: 'Начиная с',
     perNight: '/на человека',
 
@@ -59,7 +60,7 @@ const experiences = [
         title: "Пешая экскурсия по Гяндже",
         desc: "Исследуйте исторические улицы, Бутылочный дом и Ханский сад с нашим местным гидом. Откройте для себя скрытые жемчужины и богатую историю Гянджи.",
         image: "https://images.unsplash.com/photo-1544976735-d72b27464161?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-        link: "https://instagram.com",
+        link: "https://wa.me/994993138111?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%B1%D1%8B%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BF%D0%B5%D1%88%D1%83%D1%8E%20%D1%8D%D0%BA%D1%81%D0%BA%D1%83%D1%80%D1%81%D0%B8%D1%8E%20%D0%BF%D0%BE%20%D0%93%D1%8F%D0%BD%D0%B4%D0%B6%D0%B5.",
         classes: "md:col-span-2 lg:col-span-2",
         badge: "Бесплатно"
     },
@@ -67,19 +68,19 @@ const experiences = [
         title: "Дегустация вин",
         desc: "Посетите местные виноградники и попробуйте лучшие вина региона. Идеальный вечер для любителей вина.",
         image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        link: "https://instagram.com"
+        link: "https://wa.me/994993138111?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%B1%D1%8B%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B4%D0%B5%D0%B3%D1%83%D1%81%D1%82%D0%B0%D1%86%D0%B8%D1%8E%20%D0%B2%D0%B8%D0%BD."
     },
     {
         title: "Поход в лес Хаджиканд",
         desc: "Сбегите на природу всего в 30 минутах от города. Наслаждайтесь свежим воздухом и красивыми тропами леса Хаджиканд.",
         image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        link: "https://instagram.com"
+        link: "https://wa.me/994993138111?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%B1%D1%8B%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BF%D0%BE%D1%85%D0%BE%D0%B4%20%D0%B2%20%D0%BB%D0%B5%D1%81%20%D0%A5%D0%B0%D0%B4%D0%B6%D0%B8%D0%BA%D0%B0%D0%BD%D0%B4."
     },
     {
         title: "Кулинарный мастер-класс",
         desc: "Научитесь готовить традиционные азербайджанские блюда, такие как долма и плов. Вкусный практический опыт.",
         image: "https://images.unsplash.com/photo-1582234372722-c0d6d63322d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        link: "https://instagram.com"
+        link: "https://wa.me/994993138111?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%D0%B1%D1%8B%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BA%D1%83%D0%BB%D0%B8%D0%BD%D0%B0%D1%80%D0%BD%D1%8B%D0%B9%20%D0%BC%D0%B0%D1%81%D1%82%D0%B5%D1%80-%D0%BA%D0%BB%D0%B0%D1%81%D1%81."
     }
 ];
 
@@ -247,10 +248,6 @@ const faqs = [
     {
         question: "Включен ли завтрак?",
         answer: "Завтрак доступен за небольшую дополнительную плату в $5. Он включает местный хлеб, сыры, яйца, джемы и неограниченный чай/кофе."
-    },
-    {
-        question: "У вас есть шкафчики?",
-        answer: "Да, все кровати в общих номерах оборудованы личными шкафчиками. Принесите свой замок или купите его на ресепшн за $2."
     },
     {
         question: "Wi-Fi бесплатный?",

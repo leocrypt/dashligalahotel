@@ -44,6 +44,7 @@ const uiText = {
     viewAllActivities: 'View all activities',
     getDirections: 'Get Directions',
     viewOnInstagram: 'View on Instagram',
+    bookOnWhatsApp: 'Book on WhatsApp',
     startingFrom: 'Starting from',
     perNight: '/night',
 
@@ -54,12 +55,14 @@ const uiText = {
     copyright: '© 2025 Dashli Gala Hotel. All rights reserved.'
 };
 
+
+// Experiences Data
 const experiences = [
     {
         title: "Ganja City Walking Tour",
         desc: "Explore the historic streets, the Bottle House, and the Khan's Garden with our local guide. Discover the hidden gems and rich history of Ganja.",
         image: "https://images.unsplash.com/photo-1544976735-d72b27464161?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-        link: "https://instagram.com",
+        link: "https://wa.me/994993138111?text=Hello!%20I%20would%20like%20to%20book%20the%20Ganja%20City%20Walking%20Tour.",
         classes: "md:col-span-2 lg:col-span-2",
         badge: "Free"
     },
@@ -67,19 +70,19 @@ const experiences = [
         title: "Wine Tasting",
         desc: "Visit local vineyards and taste the finest wines of the region. A perfect evening for wine lovers.",
         image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        link: "https://instagram.com"
+        link: "https://wa.me/994993138111?text=Hello!%20I%20would%20like%20to%20book%20the%20Wine%20Tasting%20experience."
     },
     {
         title: "Hajikand Forest Hike",
         desc: "Escape to nature just 30 mins away from the city. Enjoy the fresh air and beautiful trails of Hajikand Forest.",
         image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        link: "https://instagram.com"
+        link: "https://wa.me/994993138111?text=Hello!%20I%20would%20like%20to%20book%20the%20Hajikand%20Forest%20Hike."
     },
     {
         title: "Azeri Cooking Class",
         desc: "Learn to cook traditional Azeri dishes like Dolma and Plov. A delicious hands-on experience.",
         image: "https://images.unsplash.com/photo-1582234372722-c0d6d63322d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        link: "https://instagram.com"
+        link: "https://wa.me/994993138111?text=Hello!%20I%20would%20like%20to%20book%20the%20Azeri%20Cooking%20Class."
     }
 ];
 
@@ -249,15 +252,11 @@ const faqs = [
         answer: "Breakfast is available for a small extra fee of $5. It includes local breads, cheeses, eggs, jams, and unlimited tea/coffee."
     },
     {
-        question: "Do you have lockers?",
-        answer: "Yes, all dorm beds come with a personal locker. Bring your own padlock or purchase one at reception for $2."
-    },
-    {
         question: "Is Wi-Fi free?",
         answer: "Absolutely! We provide fast, free Wi-Fi throughout the entire Hotel, including all rooms and common areas."
     },
     {
-        question: "Do accept card payments?",
+        question: "Do you accept card payments?",
         answer: "Yes, we accept card payments for all bookings."
     }
 ];

@@ -44,6 +44,7 @@ const uiText = {
     viewAllActivities: 'Bütün fəaliyyətlərə bax',
     getDirections: 'İstiqamət Al',
     viewOnInstagram: 'Instagrama keçid',
+    bookOnWhatsApp: 'WhatsApp ilə Sifariş Et',
     startingFrom: 'Qiymət',
     perNight: '/otaq',
 
@@ -59,7 +60,7 @@ const experiences = [
         title: "Gəncə Şəhər Gəzintisi",
         desc: "Yerli bələdçimiz ilə tarixi küçələri, Şüşə Evi və Xan Bağını kəşf edin. Gəncənin gizli incilərini və zəngin tarixini kəşf edin.",
         image: "https://images.unsplash.com/photo-1544976735-d72b27464161?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
-        link: "https://instagram.com",
+        link: "https://wa.me/994993138111?text=Salam!%20G%C9%99nc%C9%99%20%C5%9E%C9%99h%C9%99r%20G%C9%99zintisi%20turunu%20sifari%C5%9F%20etm%C9%99k%20ist%C9%99yir%C9%99m.",
         classes: "md:col-span-2 lg:col-span-2",
         badge: "Pulsuz"
     },
@@ -67,19 +68,19 @@ const experiences = [
         title: "Göygöl Şərab Turu",
         desc: "Yerli üzümlükləri ziyarət edin və regionun ən yaxşı şərablarını dadın. Şərab sevənlər üçün mükəmməl axşam.",
         image: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        link: "https://instagram.com"
+        link: "https://wa.me/994993138111?text=Salam!%20G%C3%B6yg%C3%B6l%20%C5%9E%C9%99rab%20Turunu%20sifari%C5%9F%20etm%C9%99k%20ist%C9%99yir%C9%99m."
     },
     {
         title: "Hacıkənd təbiət turu",
         desc: "Şəhərdən cəmi 30 dəqiqəlik məsafədə təbiətə qaçın. Hacıkənd Meşəsinin təmiz havasından və gözəl cığırlarından həzz alın.",
         image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        link: "https://instagram.com"
+        link: "https://wa.me/994993138111?text=Salam!%20Hac%C4%B1k%C9%99nd%20t%C9%99bi%C9%99t%20turunu%20sifari%C5%9F%20etm%C9%99k%20ist%C9%99yir%C9%99m."
     },
     {
         title: "Milli təamlar üzrə masterklas",
-        desc: "Dolma və Plov kimi ənənəvi Azərbaycan yeməklərini bişirməyi öyrənin. Dadlı praktiki təcrübə.",
+        desc: "Dolma və Plov gibi ənənəvi Azərbaycan yeməklərini bişirməyi öyrənin. Dadlı praktiki təcrübə.",
         image: "https://images.unsplash.com/photo-1582234372722-c0d6d63322d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        link: "https://instagram.com"
+        link: "https://wa.me/994993138111?text=Salam!%20Milli%20t%C9%99amlar%20%C3%BCzr%C9%99%20masterklas%20turunu%20sifari%C5%9F%20etm%C9%99k%20ist%C9%99yir%C9%99m."
     }
 ];
 
@@ -247,10 +248,6 @@ const faqs = [
     {
         question: "Səhər yeməyi daxildirmi?",
         answer: "Səhər yeməyi kiçik əlavə ödəniş ($5) ilə mövcuddur. Yerli çörək, pendir, yumurta, mürəbbə və limitsiz çay/qəhvə daxildir."
-    },
-    {
-        question: "Dolaplarınız varmı?",
-        answer: "Bəli, bütün yataqxana çarpayıları şəxsi dolap ilə təchiz edilib. Öz qıfılınızı gətirin və ya qəbulda $2-ya alın."
     },
     {
         question: "Wi-Fi pulsuzmu?",
