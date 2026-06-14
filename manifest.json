@@ -1,19 +1,19 @@
 {
-  "name": "Qala Hostel Ganja",
-  "short_name": "QalaHostel",
-  "description": "Book your stay at Qala Hostel in Ganja.",
+  "name": "Dashli Gala Hotel",
+  "short_name": "DashliGalaHotel",
+  "description": "Book your stay at Dashli Gala Hotel in Ganja.",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#1a1a1a",
   "theme_color": "#D4AF37",
   "icons": [
     {
-      "src": "https://via.placeholder.com/192x192.png?text=Icon",
+      "src": "./images/logo-optimized.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://via.placeholder.com/512x512.png?text=Icon",
+      "src": "./images/logo-optimized.png",
       "sizes": "512x512",
       "type": "image/png"
     }

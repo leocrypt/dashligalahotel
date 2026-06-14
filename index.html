@@ -4,26 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qala Hostel Ganja - Experience Azerbaijan</title>
+    <title>Dashli Gala Hotel - Experience Azerbaijan</title>
 
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#1a1a1a">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Experience the perfect blend of history, comfort, and culture at Dashli Gala Hotel in Ganja, Azerbaijan. Book your stay today!">
+    <meta name="keywords"
+        content="Dashli Gala Hotel, Ganja Hotel, Azerbaijan Hotel, Ganja Accommodation, Hostel Ganja, Dashli Gala">
+    <meta name="author" content="Dashli Gala Hotel">
+    <link rel="canonical" href="https://dashligalahotel.az/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dashligalahotel.az/">
+    <meta property="og:title" content="Dashli Gala Hotel - Experience Azerbaijan">
+    <meta property="og:description"
+        content="Experience the perfect blend of history, comfort, and culture at Dashli Gala Hotel in Ganja, Azerbaijan.">
+    <meta property="og:image" content="https://dashligalahotel.az/images/hero-background.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dashligalahotel.az/">
+    <meta property="twitter:title" content="Dashli Gala Hotel - Experience Azerbaijan">
+    <meta property="twitter:description"
+        content="Experience the perfect blend of history, comfort, and culture at Dashli Gala Hotel in Ganja, Azerbaijan.">
+    <meta property="twitter:image" content="https://dashligalahotel.az/images/hero-background.jpg">
+
+    <!-- Flag Icons CSS Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Load data.js first to get colors -->
-    <script src="js/data.js"></script>
+    <!-- Load global site configuration first -->
+    <script src="js/config.js?v=2"></script>
 
-    <!-- Apply dynamic colors using CSS variables -->
-    <script>
-        // Apply colors as CSS custom properties to the root element
-        document.documentElement.style.setProperty('--color-primary', siteColors.primary);
-        document.documentElement.style.setProperty('--color-primary-hover', siteColors.primaryHover);
-        document.documentElement.style.setProperty('--color-secondary', siteColors.secondary);
-        document.documentElement.style.setProperty('--color-background', siteColors.background);
-    </script>
+    <!-- Load language-loader.js which will load the appropriate language data file -->
+    <script src="js/language-loader.js?v=2"></script>
+
+    <!-- Dynamic colors will be applied after language data loads -->
 
     <!-- Configure Tailwind to use CSS variables -->
     <script>
@@ -53,29 +77,119 @@
     <script src="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/index.js" type="module"></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css?v=2">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Dashli Gala Hotel",
+      "image": "https://dashligalahotel.az/images/logo-optimized.png",
+      "@id": "https://dashligalahotel.az",
+      "url": "https://dashligalahotel.az",
+      "telephone": "+994993138111",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "33 Attarlar",
+        "addressLocality": "Ganja",
+        "addressCountry": "AZ"
+      },
+      "priceRange": "$$",
+      "description": "The perfect blend of history, comfort, and culture at Dashli Gala Hotel in Ganja, Azerbaijan."
+    }
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader" role="status" aria-label="Loading">
+        <!-- Centered logo block -->
+        <div id="preloader-logo-wrap">
+            <img id="preloader-logo" src="images/logo-optimized.png" alt="Dashli Gala Hotel logo">
+            <span id="preloader-hotel-name">Dashli Gala Hotel</span>
+            <!-- Animated dots -->
+            <div id="preloader-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Thin gold progress bar pinned to bottom -->
+        <div id="preloader-bar-track">
+            <div id="preloader-bar"></div>
+        </div>
+    </div>
+    <!-- ===== END PRELOADER ===== -->
 
     <!-- Header / Nav (Absolute overlay) -->
     <header
         class="absolute top-0 left-0 w-full z-50 py-6 px-6 md:px-12 flex justify-between items-center transition-all duration-300"
         id="main-header">
-        <a href="#" class="text-2xl font-bold text-white tracking-wider uppercase">Qala Hostel</a>
+        <a href="#" class="flex items-center gap-3">
+            <img src="images/logo-optimized.png" alt="Dashli Gala Hotel" class="h-12 w-auto">
+            <div class="flex flex-col">
+                <span class="text-2xl font-bold text-white tracking-wider">Dashli Gala Hotel</span>
+                <span class="text-xs text-gray-300">managed by BM Hospitality</span>
+            </div>
+        </a>
 
         <!-- Desktop Nav -->
         <nav class="hidden md:flex space-x-8">
-            <a href="#rooms" class="text-gray-200 hover:text-white transition-colors">Rooms</a>
-            <a href="#features" class="text-gray-200 hover:text-white transition-colors">Services</a>
-            <a href="#experiences" class="text-gray-200 hover:text-white transition-colors">Experiences</a>
-            <a href="#gallery" class="text-gray-200 hover:text-white transition-colors">Gallery</a>
-            <a href="#location" class="text-gray-200 hover:text-white transition-colors">Location</a>
+            <a href="#rooms" class="text-gray-200 hover:text-white transition-colors" data-ui-text="navRooms">Rooms</a>
+            <a href="#features" class="text-gray-200 hover:text-white transition-colors"
+                data-ui-text="navServices">Services</a>
+            <a href="#experiences" class="text-gray-200 hover:text-white transition-colors"
+                data-ui-text="navExperiences">Experiences</a>
+            <a href="#gallery" class="text-gray-200 hover:text-white transition-colors"
+                data-ui-text="navGallery">Gallery</a>
+            <a href="#location" class="text-gray-200 hover:text-white transition-colors"
+                data-ui-text="navLocation">Location</a>
         </nav>
 
+        <!-- Language Switcher Dropdown -->
+        <div class="hidden md:block relative" id="lang-dropdown-container">
+            <button id="lang-dropdown-btn"
+                class="flex items-center gap-2 bg-white bg-opacity-10 backdrop-blur-sm rounded-full px-4 py-2 text-white hover:bg-opacity-20 transition-all">
+                <span id="current-lang-flag" class="fi fi-gb text-lg"></span>
+                <span id="current-lang-code" class="text-sm font-semibold">EN</span>
+                <svg class="w-4 h-4 transition-transform" id="lang-dropdown-arrow" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+
+            <!-- Dropdown Menu -->
+            <div id="lang-dropdown-menu"
+                class="absolute right-0 mt-2 w-40 bg-white rounded-lg shadow-xl opacity-0 invisible transition-all duration-200 overflow-hidden">
+                <button onclick="switchLanguage('en')"
+                    class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-100 transition-colors text-gray-800"
+                    data-lang="en" data-flag="gb">
+                    <span class="fi fi-gb text-lg"></span>
+                    <span class="text-sm font-medium">English</span>
+                </button>
+                <button onclick="switchLanguage('ru')"
+                    class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-100 transition-colors text-gray-800"
+                    data-lang="ru" data-flag="ru">
+                    <span class="fi fi-ru text-lg"></span>
+                    <span class="text-sm font-medium">Русский</span>
+                </button>
+                <button onclick="switchLanguage('az')"
+                    class="lang-option w-full flex items-center gap-3 px-4 py-3 hover:bg-gray-100 transition-colors text-gray-800"
+                    data-lang="az" data-flag="az">
+                    <span class="fi fi-az text-lg"></span>
+                    <span class="text-sm font-medium">Azərbaycan</span>
+                </button>
+            </div>
+        </div>
+
+
         <!-- CTA Button -->
-        <a href="https://booking.com" target="_blank"
-            class="hidden md:inline-block bg-brand-gold hover:bg-yellow-600 text-white font-semibold py-2 px-6 rounded-full transition-all transform hover:scale-105 shadow-lg">
+        <a href="https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN" target="_blank"
+            class="hidden md:inline-block bg-brand-gold hover:bg-yellow-600 text-white font-semibold py-2 px-6 rounded-full transition-all transform hover:scale-105 shadow-lg"
+            data-ui-text="bookNow">
             Book Now
         </a>
 
@@ -89,45 +203,62 @@
 
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu"
-        class="fixed inset-0 bg-brand-dark bg-opacity-95 z-40 transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-8">
+        class="fixed inset-0 bg-brand-dark bg-opacity-95 z-[55] transform translate-x-full transition-transform duration-300 flex flex-col items-center justify-center space-y-8">
         <button id="close-menu-btn" class="absolute top-6 right-6 text-white text-4xl">&times;</button>
-        <a href="#rooms" class="text-2xl text-white mobile-link">Rooms</a>
-        <a href="#features" class="text-2xl text-white mobile-link">Services</a>
-        <a href="#experiences" class="text-2xl text-white mobile-link">Experiences</a>
-        <a href="#gallery" class="text-2xl text-white mobile-link">Gallery</a>
-        <a href="#location" class="text-2xl text-white mobile-link">Location</a>
-        <a href="https://booking.com" class="text-2xl text-brand-gold font-bold mobile-link">Book Now</a>
+        <a href="#rooms" class="text-2xl text-white mobile-link" data-ui-text="navRooms">Rooms</a>
+        <a href="#features" class="text-2xl text-white mobile-link" data-ui-text="navServices">Services</a>
+        <a href="#experiences" class="text-2xl text-white mobile-link" data-ui-text="navExperiences">Experiences</a>
+        <a href="#gallery" class="text-2xl text-white mobile-link" data-ui-text="navGallery">Gallery</a>
+        <a href="#location" class="text-2xl text-white mobile-link" data-ui-text="navLocation">Location</a>
+        <a href="https://dashli-gala-hotel.hotelrunner.com/bv3/search?locale=en-US&currency=AZN"
+            class="text-2xl text-brand-gold font-bold mobile-link" data-ui-text="bookNow">Book
+            Now</a>
+
+        <!-- Mobile Language Switcher -->
+        <div class="flex items-center gap-8 mt-4 pt-8 border-t border-gray-700 w-48 justify-center">
+            <button onclick="switchLanguage('en')" class="flex flex-col items-center group">
+                <span
+                    class="fi fi-gb text-3xl mb-2 grayscale group-hover:grayscale-0 transition-all opacity-70 group-hover:opacity-100"></span>
+                <span class="text-white text-xs tracking-widest group-hover:text-brand-gold transition-colors">EN</span>
+            </button>
+            <button onclick="switchLanguage('az')" class="flex flex-col items-center group">
+                <span
+                    class="fi fi-az text-3xl mb-2 grayscale group-hover:grayscale-0 transition-all opacity-70 group-hover:opacity-100"></span>
+                <span class="text-white text-xs tracking-widest group-hover:text-brand-gold transition-colors">AZ</span>
+            </button>
+            <button onclick="switchLanguage('ru')" class="flex flex-col items-center group">
+                <span
+                    class="fi fi-ru text-3xl mb-2 grayscale group-hover:grayscale-0 transition-all opacity-70 group-hover:opacity-100"></span>
+                <span class="text-white text-xs tracking-widest group-hover:text-brand-gold transition-colors">RU</span>
+            </button>
+        </div>
     </div>
 
     <!-- Hero Section -->
     <section class="relative h-screen w-full overflow-hidden flex items-center justify-center">
         <!-- Video Background -->
-        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
-            <!-- Using a placeholder video link, user to replace -->
-            <source
-                src="https://assets.mixkit.co/videos/preview/mixkit-backpacking-hiker-walking-down-a-trail-4447-large.mp4"
-                type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <!-- Image Background -->
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="images/hero-background.jpg" alt="Dashli Gala Hotel" class="w-full h-full object-cover">
+            <!-- <div class="absolute inset-0 bg-black bg-opacity-20"></div> -->
+        </div>
 
         <!-- Overlay -->
-        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10"></div>
 
         <!-- Content -->
         <div class="relative z-20 text-center text-white px-4">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">Experience Ganja</h1>
-            <p
-                class="text-xl md:text-2xl mb-10 font-light tracking-wide max-w-2xl mx-auto animate-fade-in-up delay-100">
-                The perfect blend of history, comfort, and culture at Qala Hostel.
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight" data-ui-text="heroTitle">
+                Experience Ganja
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-2xl mx-auto" data-ui-text="heroSubtitle">
+                The perfect blend of history, comfort, and culture at Dashli Gala Hotel.
             </p>
             <div class="animate-fade-in-up delay-200">
                 <a href="#rooms"
-                    class="bg-white text-gray-900 hover:bg-gray-100 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-2xl inline-flex items-center">
-                    <span>Explore Rooms</span>
-                    <svg class="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-                    </svg>
+                    class="inline-block bg-white text-gray-900 font-semibold py-4 px-8 rounded-full hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl"
+                    data-ui-text="exploreRooms">
+                    Explore Rooms
                 </a>
             </div>
         </div>
@@ -140,8 +271,10 @@
         <section id="rooms" class="py-20 px-6 md:px-12 bg-white">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Rooms</h2>
-                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comfortable, clean, and designed for travelers.
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-ui-text="roomsTitle">Our Rooms
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-ui-text="roomsSubtitle">Comfortable, clean,
+                        and designed for travelers.
                     </p>
                 </div>
 
@@ -155,8 +288,10 @@
         <section id="features" class="py-20 bg-gray-50">
             <div class="max-w-7xl mx-auto px-6 md:px-12">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Hostel Features</h2>
-                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Everything you need for a comfortable stay.</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-ui-text="featuresTitle">Hostel
+                        Features</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-ui-text="featuresSubtitle">Everything you
+                        need for a comfortable stay.</p>
                 </div>
 
                 <div id="features-grid" class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
@@ -170,23 +305,17 @@
             <div class="max-w-7xl mx-auto">
                 <div class="flex flex-col md:flex-row justify-between items-end mb-12">
                     <div class="max-w-xl">
-                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Ganja Experiences</h2>
-                        <p class="text-xl text-gray-600">Discover the hidden gems of Azerbaijan's second largest city.
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-ui-text="experiencesTitle">
+                            Best Experiences</h2>
+                        <p class="text-xl text-gray-600" data-ui-text="experiencesSubtitle">Discover the hidden gems of
+                            Azerbaijan's second largest city.
                         </p>
                     </div>
-                    <a href="#"
-                        class="hidden md:inline-block text-brand-gold font-bold hover:underline mt-4 md:mt-0">View all
-                        activities &rarr;</a>
                 </div>
 
                 <div id="experiences-grid"
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-[300px]">
                     <!-- Experiences will be rendered by JS -->
-                </div>
-
-                <div class="mt-8 text-center md:hidden">
-                    <a href="#" class="inline-block text-brand-gold font-bold hover:underline">View all activities
-                        &rarr;</a>
                 </div>
             </div>
         </section>
@@ -195,8 +324,10 @@
         <section id="calendar" class="py-20 bg-gray-900 text-white">
             <div class="max-w-7xl mx-auto px-6 md:px-12">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">Upcoming Events</h2>
-                    <p class="text-xl text-gray-400 max-w-2xl mx-auto">Join the fun and meet new friends.</p>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white" data-ui-text="eventsTitle">Upcoming
+                        events in Ganja city</h2>
+                    <p class="text-xl text-gray-400 max-w-2xl mx-auto" data-ui-text="eventsSubtitle">Join the fun and
+                        meet new friends.</p>
                 </div>
 
                 <div id="events-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -209,8 +340,10 @@
         <section id="gallery" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-6 md:px-12">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Gallery</h2>
-                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">A glimpse into the Qala life.</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-ui-text="galleryTitle">Gallery
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-ui-text="gallerySubtitle">A glimpse into the
+                        Qala life.</p>
                 </div>
 
                 <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -223,16 +356,18 @@
         <section id="location" class="relative bg-gray-100 h-[600px] w-full">
             <!-- Google Maps Embed -->
             <iframe class="w-full h-full grayscale hover:grayscale-0 transition-all duration-500"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.2618957863!2d46.360!3d40.687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQxJzEzLjIiTiA0NsKwMjEnMzYuMCJF!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3025.8112002940525!2d46.36684998905395!3d40.678128719023285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2saz!4v1768413404046!5m2!1sen!2saz"
                 allowfullscreen="" loading="lazy"></iframe>
 
             <div class="absolute bottom-10 left-1/2 -translate-x-1/2 bg-white p-8 rounded-xl shadow-2xl max-w-sm z-10">
-                <h3 class="text-2xl font-bold mb-4">Find Us</h3>
-                <p class="text-gray-600 mb-6">Located in the heart of Ganja, just 5 minutes walk from the main square.
+                <h3 class="text-2xl font-bold mb-4" data-ui-text="locationTitle">Find Us</h3>
+                <p class="text-gray-600 mb-6" data-ui-text="locationDesc">Located in the heart of Ganja, just 5 minutes
+                    walk from the main square.
                 </p>
                 <div class="flex flex-col space-y-3">
-                    <a href="https://maps.google.com" target="_blank"
-                        class="w-full bg-brand-gold text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-yellow-600 transition-colors shadow-lg">Get
+                    <a href="https://maps.app.goo.gl/3EgdLhG2YjHwhNyXA" target="_blank"
+                        class="w-full bg-brand-gold text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-yellow-600 transition-colors shadow-lg"
+                        data-ui-text="getDirections">Get
                         Directions</a>
                 </div>
             </div>
@@ -242,8 +377,10 @@
         <section id="offers" class="py-20 px-6 md:px-12 bg-white">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Special Offers</h2>
-                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Save money on your adventures.</p>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-ui-text="offersTitle">Special
+                        Offers</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-ui-text="offersSubtitle">Save money on your
+                        adventures.</p>
                 </div>
 
                 <div id="offers-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -255,15 +392,18 @@
         <!-- FAQ Section -->
         <section id="faq" class="py-20 bg-gray-50">
             <div class="max-w-3xl mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-                </div>
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12" data-ui-text="faqTitle">
+                        Frequently Asked Questions</h2>
+                    <div class="space-y-4">
 
-                <div id="faq-container" class="space-y-4">
-                    <!-- FAQ items will be rendered by JS -->
-                </div>
-            </div>
+                        <div id="faq-container" class="space-y-4">
+                            <!-- FAQ items will be rendered by JS -->
+                        </div>
+                    </div>
         </section>
+
+
 
     </main>
 
@@ -303,7 +443,7 @@
                         <path
                             d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                     </svg>
-                    View on Instagram
+                    <span data-ui-text="viewOnInstagram"></span>
                 </a>
             </div>
         </div>
@@ -322,24 +462,38 @@
     <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div class="col-span-1 md:col-span-2">
-                <h3 class="text-2xl font-bold mb-4">Qala Hostel Ganja</h3>
-                <p class="text-gray-400 max-w-sm">Your home away from home in the heart of Azerbaijan. Experience the
-                    culture, meet the people, live the history.</p>
+                <div class="flex items-center gap-3 mb-4">
+                    <img src="images/logo-optimized.png" alt="Dashli Gala Hotel" class="h-14 w-auto">
+                    <div class="flex flex-col">
+                        <h3 class="text-2xl font-bold">Dashli Gala Hotel</h3>
+                        <span class="text-xs text-gray-400">managed by BM Hospitality</span>
+                    </div>
+                </div>
+                <p class="text-gray-400 mb-6 max-w-md" data-ui-text="footerTagline">
+                    Your home away from home in the heart of Azerbaijan. Experience the culture, meet the people, live
+                    the history.
+                </p>
             </div>
             <div>
-                <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                <h4 class="font-bold text-lg mb-4" data-ui-text="quickLinks">Quick Links</h4>
                 <ul class="space-y-2 text-gray-400">
-                    <li><a href="#rooms" class="hover:text-white transition-colors">Rooms</a></li>
-                    <li><a href="#experiences" class="hover:text-white transition-colors">Experiences</a></li>
-                    <li><a href="#offers" class="hover:text-white transition-colors">Offers</a></li>
-                    <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    <li><a href="#rooms" class="hover:text-brand-gold transition-colors"
+                            data-ui-text="navRooms">Rooms</a></li>
+                    <li><a href="#features" class="hover:text-brand-gold transition-colors"
+                            data-ui-text="navServices">Services</a></li>
+                    <li><a href="#experiences" class="hover:text-brand-gold transition-colors"
+                            data-ui-text="navExperiences">Experiences</a></li>
+                    <li><a href="#gallery" class="hover:text-brand-gold transition-colors"
+                            data-ui-text="navGallery">Gallery</a></li>
+                    <li><a href="#location" class="hover:text-brand-gold transition-colors"
+                            data-ui-text="navLocation">Location</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+                <h4 class="font-bold text-lg mb-4" data-ui-text="followUs">Follow Us</h4>
                 <div class="flex space-x-4">
                     <!-- Facebook -->
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                    <a id="footer-facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer"
                         class="text-gray-400 hover:text-white transition-colors">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path
@@ -347,7 +501,7 @@
                         </svg>
                     </a>
                     <!-- Instagram -->
-                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                    <a id="footer-instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
                         class="text-gray-400 hover:text-white transition-colors">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path
@@ -355,7 +509,7 @@
                         </svg>
                     </a>
                     <!-- TikTok -->
-                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer"
+                    <a id="footer-tiktok" href="https://tiktok.com" target="_blank" rel="noopener noreferrer"
                         class="text-gray-400 hover:text-white transition-colors">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path
@@ -366,13 +520,88 @@
             </div>
         </div>
         <div class="text-center text-gray-500 text-sm">
-            &copy; 2025 Qala Hostel Ganja. All rights reserved.
+            <p data-ui-text="copyright">&copy; 2025 Dashli Gala Hotel. All rights reserved.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <!-- data.js is already loaded in head for color config -->
-    <script src="js/main.js"></script>
+    <!-- Language-specific data is already loaded in head via language-loader.js -->
+    <script src="js/main.js?v=2"></script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('✅ Service Worker registered successfully:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.error('❌ Service Worker registration failed:', error);
+                    });
+            });
+        } else {
+            console.warn('⚠️ Service Workers not supported in this browser');
+        }
+    </script>
+
+    <!-- Preloader dismiss logic -->
+    <script>
+        (function () {
+            var preloader = document.getElementById('preloader');
+            var preloaderBar = document.getElementById('preloader-bar');
+            var appRendered = false;
+
+            // Use a CSS class to lock scroll so modal logic won't interfere
+            document.body.classList.add('preloader-active');
+
+            // Fix 4: Set bar to 20% immediately to show activity as soon as page starts
+            if (preloaderBar) preloaderBar.style.width = '20%';
+
+            function dismissPreloader() {
+                if (!preloader || preloader.classList.contains('fade-out')) return;
+                appRendered = true;
+                preloader.classList.add('fade-out');
+                document.body.classList.remove('preloader-active');
+
+                // Fix 2: Fallback removal — remove the element if transitionend never fires
+                // (can happen with reduced-motion settings or if visibility doesn't fire the event)
+                var elementRemoved = false;
+                preloader.addEventListener('transitionend', function () {
+                    if (elementRemoved) return;
+                    elementRemoved = true;
+                    if (preloader.parentNode) preloader.remove();
+                }, { once: true });
+                setTimeout(function () {
+                    if (!elementRemoved && preloader.parentNode) {
+                        elementRemoved = true;
+                        preloader.remove();
+                    }
+                }, 800);
+            }
+
+            // Primary trigger: wait for main.js to signal that ALL dynamic content is ready
+            window.addEventListener('appReady', function () {
+                // Brief pause so the last paint frame completes before fading out
+                setTimeout(dismissPreloader, 200);
+            }, { once: true });
+
+            // Fix 5: Safety fallback — dismiss after 8 s, but show error if app never rendered
+            setTimeout(function () {
+                if (!appRendered) {
+                    // App failed to initialise — swap the spinner UI for an error prompt
+                    var dots = document.getElementById('preloader-dots');
+                    var hotelName = document.getElementById('preloader-hotel-name');
+                    if (dots) {
+                        dots.innerHTML = '<span style="color:#e57373;font-size:0.8rem;letter-spacing:0.05em;opacity:1;">Something went wrong.</span>';
+                    }
+                    if (hotelName) hotelName.textContent = 'Please refresh the page.';
+                    if (preloaderBar) preloaderBar.style.background = '#e57373';
+                }
+                dismissPreloader();
+            }, 8000);
+        })();
+    </script>
 </body>
 
 </html>
